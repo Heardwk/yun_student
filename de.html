@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <script type="text/javascript">
+        var _speedMark = new Date();
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            color: #555;
+            font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        input, textarea {
+            border: 1px solid #ddeafb;
+        }
+
+            input[type=submit], input[type=button] {
+                cursor: pointer;
+            }
+.icon-cuowu{
+	color: red;
+}
+.icon-zhengque{
+	color: rgb(26, 250, 41);
+}
+#upwd-msg{
+	word-wrap:break-word ;
+}
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            outline: none;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .hint {
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 5px;
+            visibility: hidden;
+        }
+
+        .right {
+            border-color: #1dc091;
+        }
+
+        .hint_right {
+            color: #1dc091;
+        }
+
+        .wrong {
+            border-color: #EA5A70;
+        }
+
+        .hint_wrong {
+            color: #EA5A70;
+        }
+
+        input[type=submit], .button {
+            display: block;
+            margin: 0 auto;
+            line-height: 20px;
+            font-size: 20px;
+            color: #fff;
+            background: #0f88eb;
+            border: 0;
+        }
+
+        .lable {
+            display: inline-block;
+        }
+
+        .login_cont {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+            .login_cont .input_signup, .login_cont .input_signin {
+                display: none;
+            }
+
+        .input_signin {
+            padding: 20px;
+        }
+
+        .login_cont .active {
+            display: block;
+        }
+
+        .login_nav {
+            height: 54px;
+            text-align: center;
+            margin-bottom: 10px;
+            background: #EBF2FA;
+            line-height: 54px;
+        }
+
+        .nav_slider {
+            display: inline-block;
+        }
+
+            .nav_slider a {
+                display: inline-block;
+                width: 65px;
+                line-height: 35px;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .nav_slider .focus {
+                border-bottom: 2px solid #3cf;
+            }
+
+        .forget {
+            width: 100%;
+            text-align: right;
+        }
+
+            .forget a {
+                text-decoration: none;
+            }
+
+        .yanzhengma {
+            width: 100px;
+            height: 50px;
+            margin-left: 18%;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+        }
+        .input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 50%;
+    margin-bottom: 0;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 50%;
+    margin-bottom: 0;
+}
+	   #from{
+		  width:70%;
+			height:200px;
+			margin:0 auto;}
+	 #pwd{
+	 	display: -webkit-flex;
+	 display: flex;
+	 }
+	 #user{
+	 display: -webkit-flex;
+	 display: flex;
+	 margin-bottom: 20px;
+	 }
+	 .input-group-addon:first-child {
+    width: 110px;
+}
+i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+
+.uname-msg>i{
+	
+}
+   </style>
+</head>
+<body>
+    <div class="login_cont">
+        <div class="login_nav">
+            <div id="nav_slider" class="nav_slider">
+                <a href="javascript:void(0)" class="signin">学生</a>
+                <a href="javascript:void(0)" class="signin">老师</a>
+                <a href="javascript:void(0)" class="signin">教务</a>
+            </div>
+        </div>
+        <!--<form>
+            <div class="input_signin active">
+                <input class="input" id="login_user_name" type="text" aria-label="用户名" placeholder="用户名" autofocus>
+                <div class="hint">请输入用户名</div>
+                <input class="input" id="login_password" type="password" aria-label="密码" placeholder="密码">
+                <div class="hint">请输入密码</div>
+                <input class="input yanzheng" id="login_yanzhengma" type="text" aria-label="验证码" placeholder="验证码"
+                       style="width: 50%;">
+                <div class="yanzhengma"></div>
+                <div class="hint">请填写验证码</div>
+                <input type="submit" id="button" class="button" name="button" value="登录" />
+                <div class="forget">
+                    <a href="javascript:void(0)">忘记密码？</a>
+                </div>
+            </div>
+        </form>-->
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<form action="" id="from" class="bs-example bs-example-form">
+	  <div id="user"class="input-group">
+	  	  <span class="input-group-addon">用户名</span>
+	  	 <input type="text" class="form-control" placeholder="用户名" name="uname" id="uname">
+					<span id="uname-msg"></span><br>
+		</div>
+		<div id="pwd"class="input-group">
+			 <span class="input-group-addon">密码</span>
+		<input type="text" class="form-control" placeholder="密码"name="upwd" id="pwd">
+					<span id="upwd-msg"></span>
+		</div><br>
+		<div class="yanzheng">
+		   <input class="input yanzheng" id="login_yanzhengma" type="text" aria-label="验证码" placeholder="验证码"
+                       style="width: 50%;">
+                <div class="yanzhengma"></div>
+                <div class="hint">请填写验证码</div>
+		</div>
+		<input type="button" value="登录"id="button">
+	</form>
+
+	<script>
+		$(":button").click(function(){
+			var $txtName=$("[name=uname]");
+			var $txtPwd=$("[name=upwd]");
+			var $spanName=$("#uname-msg");
+			var $spanPwd=$("#upwd-msg");
+			if($txtName.val().length<3
+					||$txtName.val().length>9)
+				$spanName.html("<i class='iconfont icon-cuowu'></i>用户名必须介于3~9位之间!");
+			else{
+				$spanName.html("<i class='iconfont icon-zhengque'></i>");
+				if($txtPwd.val().length<6
+						||$txtPwd.val().length>8)
+					$spanPwd.html("<i class='iconfont icon-cuowu'></i>密码必须介于6~8位之间!");
+				else{
+					$spanPwd.html("<i class='iconfont icon-zhengque'></i>");
+					$("form").submit();
+				}
+				
+			}
+		})
+	</script>
+
+    <script type="text/javascript">
+          window.onload = function () {
+              var navSlider = document.getElementById("nav_slider");
+              var signin = navSlider.getElementsByClassName("signin");
+              var focus = signin[0];
+              focus.className = "signin focus";
+              for (var i = 0; i < signin.length; i++) {
+                  signin[i].onclick = function (i) {
+                      focus.className = "signin";
+                      this.className = "signin focus";
+                      focus = this;
+                  }
+              }
+          }
+
+    </script>
+    <script type="text/javascript">
+    	//http://sc.cost88.com/LoginHelper/GetVerifyCode?UserName=123123&ValidatecodeType=Login&t=0.24745963827491368
+	
+//      $("form").on("submit", function () {
+//			if(false){
+//				alert("ok");
+//				
+//				return false;
+//			}
+//          return false;
+//      });
+
+//	$(".cancel").click(function() {
+//		validator.resetForm();
+//	});
+//	$.validator.setDefaults({
+//  submitHandler: function() {
+//    alert("提交成功!");
+//  }
+//});
+
+    </script>
+    <!--<script src="/Js/Base/ta.js?v=20170908"></script>-->
+</body>
+</html>

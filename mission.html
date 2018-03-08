@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云上实训-教师</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <link rel="stylesheet" href="css/mission.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mission.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--col-lg-10 col-lg-offset-1-->
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row xb_header">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 ">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 logo_content">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 ">
+                    <div class="header_right">
+                        <a href="#" class="user_style text-right">
+                            <img src="imgs/touxiang.png"><span class="name_text">学生名称</span><span
+                                class="glyphicon glyphicon-triangle-bottom"></span>
+                        </a>
+                        <ul class="top_menu">
+                            <li><a href="personal_center/student_basic.html">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--学校图片-->
+    <!--col-xs-offset-1 col-sm-offset-1-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12  " style="padding:0;position: relative">
+            <img src="imgs/xuexiao.png" width="100%">
+            <div class="row" style="position: absolute;width:100%;height:100%; top:0;">
+                <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 "
+                     style="position: absolute; height:100%;">
+                    <div class="nav_top">
+                        <ul class="list-inline nav_list">
+                            <li><a href="">首页</a></li>
+                            <li><a href="basic.html">实训中心</a></li>
+                            <li class="active_nav"><a href="mission.html">我的任务</a></li>
+                            <li><a href="performance.html">成绩查询</a></li>
+                            <li><a href="user_capacity.html">能力档案</a></li>
+                            <li><a href="data_sharing.html">资料共享</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中部内容区域-->
+    <div class="row" style="min-height: 400px; padding-bottom: 70px;">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 " style="padding:0;position: relative">
+            <h4 class="title_h4">任务管理</h4>
+                <div class="chooiceBtn_panel">
+                    <ul class="list-inline" id="chooiceBtn">
+                        <li class="active">
+                            <a href="javascript:;">课程实训</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">综合实训</a>
+                        </li>
+                    </ul>
+<!--                    <a class="pull-right btn_style" id="btn_release" href="javascript:;">发布实训任务</a>-->
+                </div>
+      		    <div class="chooic">
+			          <div class="chooic_top">
+			            <div class="chooice_content">
+			                <div class="chooice_box">
+			                    <span>当前学期</span>
+			                    <select>
+			                        <option>2017年下学期</option>
+			                    </select>
+			                </div>
+			                <div class="chooice_box">
+			                    <span>任务状态</span>
+			                    <ul class="list-inline">
+			                        <li class="active"><a href="javascript:;">全部</a></li>
+			                        <li><a href="javascript:;">进行中</a></li>
+			                        <li><a href="javascript:;">已结束</a></li>
+			                        <li><a href="javascript:;">未开始</a></li>
+			                    </ul>
+			                </div>
+			                <div class="chooice_box">
+			                    <span>任务类型</span>
+			                    <ul class="list-inline">
+			                        <li class="active"><a href="javascript:;">全部</a></li>
+			                        <li><a href="javascript:;">练习任务</a></li>
+			                        <li><a href="javascript:;">测试任务</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+			            <ul class="task_list">
+			                <li>
+			                    <div class="inline_pannel pull-left m-r">
+			                        <img src="imgs/book.png">
+			                    </div>
+			                    <div class="inline_pannel pull-left">
+			                        <h4>任务名称<span class="remaining_time hide">剩余时间：1天 00:00:00</span><a href="javascript:;"
+			                           class="btn_gray hide">提前结束</a>
+			                        </h4>
+			                        <ol class="ol_inline pull-left">
+			                        	 <li>发布人：<span>李老师</span></li>
+			                            <li>开始时间：<span>2017-11-6  10:00:00</span></li>
+			                            <li>结束时间：<span>2017-11-7  10:00:00</span></li>
+			                           
+			                        </ol>
+			                        <ol class="ol_inline pull-left">
+			                            <li>我的岗位：<span>出纳</span></li>
+			                            <li>任务类型：<span>多岗位联训-测试</span></li>
+			                            <li>完成进度：
+			                                <div class="progress progress_add">
+			                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+			                                         aria-valuemax="100" style="width: 0%;">
+			                                        0%
+			                                    </div>
+			                                </div>
+			                            </li>
+			                        </ol>
+			                    </div>
+			                                       
+			                    <div class="inline_pannel pull-right padding_t">
+			                    	 <div class="score">
+			                           <span >得分：<b></b></span>
+			                         </div> 
+			                        <!--<a href="javascript:;" class="btn_gray remove_btn">删除</a>
+			                        <a href="javascript:;" class="btn_gray">编辑</a>-->
+			                        <a href="taskManagement.html" class="btn_gray">开始任务</a>
+			                        
+			                    </div>
+			                </li>
+			                <li>
+			                    <div class="inline_pannel pull-left m-r">
+			                        <img src="imgs/book.png">
+			                    </div>
+			                    <div class="inline_pannel pull-left">
+			                        <h4>任务名称<span class="remaining_time ">进行中&nbsp;&nbsp;剩余时间：1天 00:00:00</span></h4>
+			                        <ol class="ol_inline pull-left">
+			                        	<li>发布人：<span>李老师</span></li>
+			                            <li>开始时间：<span>2017-11-6  10:00:00</span></li>
+			                            <li>结束时间：<span>2017-11-7  10:00:00</span></li>
+			                        </ol>
+			                        <ol class="ol_inline pull-left">
+			                            <li>任务类型：<span>课程实训_基础会计_练习</span></li>
+			                            <li>做题状态：<span>进行中</span></li>
+			                            <li>做题进度：
+			                                <div class="progress progress_add">
+			                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+			                                         aria-valuemax="100" style="width: 60%;">
+			                                        60%
+			                                    </div>
+			                                </div>
+			                            </li>
+			                        </ol>
+			                    </div>
+			                    <div class="inline_pannel pull-right padding_t">
+			                    	 <div class="score">
+			                           <span >得分：<b></b></span>
+			                         </div> 
+			                        <!--<a href="javascript:;" class="btn_gray remove_btn">删除</a>
+			                        <a href="javascript:;" class="btn_gray">编辑</a>-->
+			                        <a href="taskManagement.html" class="btn_gray_01">开始任务</a>
+			                    </div>
+			                </li>
+			                <li>
+			                    <div class="inline_pannel pull-left m-r">
+			                        <img src="imgs/book.png">
+			                    </div>
+			                    <div class="inline_pannel pull-left">
+			                        <h4>任务名称<span class="remaining_time hide">剩余时间：1天 00:00:00</span><a href="javascript:;"
+			                              class="remaining_time_1 btn_gray">提前结束</a>
+			                        </h4>
+			                        <ol class="ol_inline pull-left">
+			                        	<li>发布人：<span>李老师</span></li>
+			                            <li>开始时间：<span>2017-11-6  10:00:00</span></li>
+			                            <li>结束时间：<span>2017-11-7  10:00:00</span></li>
+			                        </ol>
+			                        <ol class="ol_inline pull-left">
+			                            <li>任务类型：<span>综合实训_会计岗位_测试</span></li>
+			                            <li>做题状态：<span>进行中</span></li>
+			                            <li>做题进度：
+			                                <div class="progress progress_add">
+			                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+			                                         aria-valuemax="100" style="width: 100%;">
+			                                        100%
+			                                    </div>
+			                                </div>
+			                            </li>
+			                        </ol>
+			                    </div>
+			                    <div class="inline_pannel pull-right padding_t">
+			                    	 <div class="score">
+			                           <span >得分：<b>88</b></span>
+			                         </div> 
+			                        <a href="javascript:;" class="btn_gray remove_btn hide">删除</a>
+			                        <a href="javascript:;" class="btn_gray hide">编辑</a>
+			                        <a href="taskManagement.html" class="btn_gray_01">查看详情</a>
+			                    </div>
+			                </li>
+			            </ul>
+			       
+			           </div>
+			           <!--综合实训-->
+			          <div class="chooic_bot">
+				             <div class="chooice_content">
+				                <div class="chooice_tlt">
+				                    <span>当前学期</span>
+				                    <select>
+				                        <option>2017年下学期</option>
+				                    </select>
+				                </div>
+				                <div class="chooice_tlt">
+				                    <span>任务状态</span>
+				                    <ul class="list-inline">
+				                        <li><a href="javascript:;">全部</a></li>
+				                        <li><a href="javascript:;">进行中</a></li>
+				                        <li><a href="javascript:;">已结束</a></li>
+				                        <li><a href="javascript:;">未开始</a></li>
+				                    </ul>
+				                </div>
+				                <div class="chooice_tlt">
+				                    <span>任务类型</span>
+				                    <ul class="list-inline">
+				                        <li><a href="javascript:;">全部</a></li>
+				                        <li><a href="javascript:;">练习任务</a></li>
+				                        <li><a href="javascript:;">测试任务</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+			                   <ul>
+			                     <div class="my_ta">
+			                         <div class="ta">
+			                         	教师还未发布任务
+			                         </div>
+						          </div>
+				               </ul>
+			              </div>
+          		</div>
+        </div>
+    </div>
+    
+    <!--底部-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 footer_content">
+            <p>版权所有@ 中德安普2013-2016京IPC备16003362号-1</p>
+            <p>建议使用IE浏览器（9.0版本以上）或其他高版本浏览器访问本站</p>
+        </div>
+    </div>
+</div>
+
+<!--课程选择弹框-->
+<div class="tooltip_panel" id="popup_release">
+    <div class="book_content">
+        <h4>选择任务类型 <a href="javascript:;" class="pull-right btn_cha btn_close">×</a></h4>
+        <div class="center_content">
+            <dl>
+                <dt>课程实训：</dt>
+                <dd>
+                    <ul class="lesson_list list-inline">
+                        <li class="add_gou"><span class="icon_gou"></span><span>基础会计</span></li>
+                        <li><span class="icon_gou"></span><span>财务会计</span></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>综合实训：</dt>
+                <dd>
+                    <ul class="lesson_list list-inline">
+                        <li class="add_gou"><span class="icon_gou"></span><span>会计岗位</span></li>
+                        <li><span class="icon_gou"></span><span>出纳岗位</span></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="btn_panel">
+            <a id="btn_book_sure" href="javascript:;" class="btn_backgroundblue pull-right btn_basic">确定</a>
+            <a href="javascript:;" class="btn_borderblue pull-right btn_basic btn_close">取消</a>
+        </div>
+    </div>
+</div>
+
+<!--右侧固定页面内容-->
+<div class="right_flexd">
+    <ul>
+        <li class="first_box">
+            <a href="javascript:;">
+                <span class="iconfont icon-kefu"></span>
+                <p class="first_text">咨询&反馈</p>
+            </a>
+            <div class="flexd_panel">
+                <ul class="flexd_content">
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-kefu "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                                0731-85219848
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-qq"></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                            <ol class="list-inline">
+                                <li><a href="javascript:;">客服1</a></li>
+                                <li><a href="javascript:;">客服2</a></li>
+                                <li><a href="javascript:;">客服3</a></li>
+                                <li><a href="javascript:;">客服4</a></li>
+                                <li><a href="javascript:;">客服5</a></li>
+                                <li><a href="javascript:;">客服6</a></li>
+                            </ol>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-fankui "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <a href="javascirpt:;" style="line-height: 36px;">聆听、建议反馈</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-APPxiazai"></span>
+                    </div>
+                    <div class="text-content">
+                        <span>下载APP</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li><a href="javascript:;">
+            <div class="move_content">
+                <div class="icon-content">
+                    <span class="iconfont icon-zaixianliaotian"></span>
+                </div>
+                <div class="text-content">
+                    <span>在线 聊天</span>
+                </div>
+            </div>
+        </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-remenhuati"></span>
+                    </div>
+                    <div class="text-content">
+                        <span>热门 话题</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li style="display: none" id="goTop">
+            <a href="#">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-fanhuidingbu"></span>
+                    </div>
+                    <div class="text-content">
+                        <span>返回 顶部</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<script src="js/global.js"></script>
+<script src="js/teacherManage4.js"></script>
+</body>
+</html>

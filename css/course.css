@@ -1,0 +1,350 @@
+
+.c{
+	background: url("../imgs/bg.jpg")no-repeat;
+}
+.nav_list li a {
+    display: inline-block;
+    height: 100%;
+    line-height: 56px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    /*  padding:0 40px;*/
+    width: 100%;
+    text-align: center;
+}
+
+.nav_list .active_nav a {
+    background: #157CF0;
+}
+
+.right_flexd {
+    position: fixed;
+    /* top:315px;*/
+    top: 30%;
+    right: 20px;
+    min-height: 200px;
+    width: 48px;
+    border: 1px solid #E5E5E5;
+}
+
+.right_flexd>ul>li {
+    height: 53px;
+    border-bottom: 1px solid #E5E5E5;
+    text-align: center;
+    line-height: 53px;
+    background: #157CF0;
+}
+
+.first_text {
+    padding: 0 11px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.right_flexd>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.right_flexd>ul>li .iconfont {
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+.right_flexd>ul>.first_box {
+    height: 173px;
+    position: relative;
+}
+
+.flexd_panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height:240px;
+    transition: all 0.4s linear;
+    visibility: hidden;
+}
+.flexd_content{
+    position: absolute;
+    top:0;
+    right: 10px;
+    width:100%;
+    height:240px;
+    background:#fff;
+    text-align: left;
+    padding:20px;
+    box-shadow: 0 0 4px 6px rgba(0,0,0,0.1);
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.4s linear;
+}
+.right_flexd ul .first_box:hover .flexd_panel{
+    visibility: visible;
+    left: -260px;
+    width: 260px;
+}
+.right_flexd ul .first_box:hover .flexd_panel .flexd_content{
+    visibility: visible;
+}
+.flexd_content>li{
+    float: left;
+    width: 100%;
+    min-width: 210px;
+}
+.flexd_panel .flexd_content>li .iconfont{
+    font-size: 28px;
+    color:#888;
+}
+.text_show{
+    line-height: 26px;
+    max-width: 150px;
+}
+.icon_content{
+    padding:0 10px;
+}
+.color_888{
+    color:#888;
+}
+.color_444{
+    color:#444;
+}
+.move_content{
+    width:92px;
+    position: absolute;
+    left: 0;
+    transition: all 0.4s linear;
+}
+.move_content:hover{
+    left: -46px;
+    transition: all 0.4s linear;
+}
+.text-content,.icon-content{
+    width:46px;
+    height:52px;
+    float: left;
+    color:#fff;
+}
+.text-content{
+    line-height: 20px;
+    padding:6px 5px;
+}
+.footer_content{
+	margin-top: 54px;
+    height:85px;
+    background:#313237;
+    padding:20px 0;
+    color: rgba(255, 255, 255, 0.83);
+    text-align: center;
+}
+.article{
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	box-sizing: border-box;
+	border: 1px solid #E4E4E4 ;
+	box-shadow: 0 -2px 3px 0 #DDDDDD;
+}
+.article_t{
+	border-bottom: 1px solid #E4E4E4;
+	width: 100%;
+	height:60px;
+	line-height: 80px;
+	margin: auto;
+	margin-top: 20px;
+
+}
+.article_t>span>a{
+	float: right;
+	width: 120px;
+	height: 40px;
+	border: 1px solid #A9AAAE;
+	color: #108EE9;
+	text-align: center;
+	line-height: 40px;
+    margin-right: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.article_t>span:hover{
+	 background-color: #108EE9;
+	 color: white;
+}
+.ar_title{
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 40px;
+    text-align: center;
+}
+.ar_title>span{
+	display: inline-block;
+}
+
+.article_con{
+	border-top:1px dashed #E4E4E4;
+}
+.ar_con{
+	min-height: 300px;
+    text-indent:2em;
+    padding:10px; 
+    margin:0;
+    word-wrap:break-word;
+    text-align: left;
+    white-space:normal; 
+    word-break:break-all;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    padding: 7px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #333333;
+    line-height: 40px;
+    background-color: #FFFFFF;
+    padding-bottom: 60px;
+}
+
+.ar_bo{
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 1px solid #E4E4E4;
+    padding-top: 33px;
+    padding-bottom: 60px;
+    background-color: #FFFFFF;
+    /*width: 1197px;*/
+}
+.ar_bo_ar>div{
+	display: flex;
+	-webkit-display:flex;
+	padding: 10px 0;
+	color: #108EE9;
+}
+.ar_r>a{
+	color:#929292;
+	font-size: 1em;
+	margin-left: 20px;
+}
+.ar_con_ar{
+	width: 840px;
+	margin: 0 auto;
+}
+.ar_bo_ar{
+	width: 840px;
+	margin: 0 auto;
+}
+/*左边*/
+.arcinfo_left{
+	text-align: left;
+	/*margin-left: 60px;*/
+}
+.arcinfo_left>p{
+	color: #000000;
+	padding-left: 60px;
+}
+.arcinfo_left>ul>li{
+	padding: 10px 0px;
+	padding-left: 60px;
+}
+/*右边*/
+.arcinfo_right{
+	text-align: left;
+}
+.arcinfo_right>p{
+	color: #000000;
+}
+.arcinfo_right>ul>li{
+	padding: 10px 0px;
+}
+.arcinfo{
+    padding-bottom: 15px;
+    color: #929292;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.arc_right{
+	margin-top: 70px;
+}
+.arcinfo_right>ul>li>span{
+    padding: 10px 100px;
+    display: inline-block;
+	margin-left: 20px;
+	color: #b4d0f3;
+}
+.arcinfo_right>ul>li>span>a{
+     color: #b4d0f3;
+	padding: 0px 10px;
+}
+.arcinfo_right>ul>li>span>a:hover{
+     color: #157CF0;
+}
+
+.arc_right>a{
+	color: #b4d0f3;
+	padding: 0px 10px;
+}
+.arc_right>a:hover{
+	color: #157CF0;
+	
+}
+/*.arcinfo>span{
+	display:inline-block;
+   font-size: 10px;
+}*/
+.nav_c{
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top:25px;
+	
+}
+.nav_c>b{
+	display: inline-block;
+    font-weight: 400;
+    color: #929292;;
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+.arcinfo_right {
+    text-align: left;
+    width: 42%;
+}
+.nav_c{
+	margin: 0 auto;
+	margin-top:25px;
+	margin-left: 20px;
+}
+.ar_con {
+    min-height: 300px;
+    text-indent: 2em;
+    padding: 10px;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: left;
+    white-space: normal;
+    word-break: break-all;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    padding: 7px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #333333;
+    line-height: 40px;
+    background-color: #FFFFFF;
+    padding-bottom: 60px;
+}
+.article {
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    box-shadow: 0 -2px 3px 0 #DDDDDD;
+}
+.arcinfo_right>ul>li>span {
+    padding: 10px 20px;
+    display: inline-block;
+    margin-left: 20px;
+    color: #b4d0f3;
+}
+}

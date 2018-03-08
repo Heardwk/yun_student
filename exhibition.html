@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>云上实训-学生页面</title>
+		<link rel="stylesheet" href="css/global.css">
+    <script src="js/laydate.js" type="text/javascript" charset="utf-8"></script>
+    	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+   <style>
+   	.cotent{
+	  background-image: url("imgs/bg.jpg");
+	  background-repeat: no-repeat;
+	}
+	.con_form{
+	width: 90%;
+    padding-top: 55px;
+	}
+	button:hover{
+		color: white;
+		background-color: #157CF0;
+	}
+	#cotent{
+		max-width: 1200px;
+	min-height: 300px;
+	margin: auto;
+	
+	margin-bottom: 50px;
+	}
+	button{
+		display: inline-block;
+	    padding: 7px 30px;
+	    border: 1px solid #888888;
+	    cursor: pointer;
+	    border-radius: 4px;
+	    background-color: white;
+	}
+	.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 4px;
+}
+
+
+/*修改处*/
+
+@media only screen and (max-width: 768px) {
+	.navbar-default .navbar-nav>li>a {
+    color: #888!important;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white!important;
+    background-color: transparent;
+    background-color: #157CF0;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    z-index: 1000;
+    background: red;
+    background-color: white;
+}
+}
+.navbar-default {
+     background: rgba(0, 0, 0, 0)!important;
+     border-color: rgba(0, 0, 0, 0)!important;;
+}
+.navbar-nav {
+    margin: 0.5px -15px!important;
+}
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 34px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: white;
+    background-color: #157CF0;
+}
+/*汉堡包样式*/
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #157CF0;
+}
+.navbar-default .navbar-toggle {
+    border-color: #157CF0;
+}
+toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent;
+    background-color: #157CF0;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: white;
+    background-color: #157cf0;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #157cf0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 24px;
+}
+/*修改处*/
+.navbar-header>ul{
+	display: flex;
+	box-sizing: border-box;
+}
+.navbar-header>ul>li>a{
+	position: relative;
+    display: block;
+    padding: 10px 24px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar-header>ul>li:first-child{
+	padding-left:30px;
+}
+.navbar-header>ul>li>a:hover{
+    color: white;
+    background-color: #157CF0;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 150px;
+}
+.navbar-nav {
+    margin: 2.5px -13px!important;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.175);
+}
+   </style>
+	<body>
+		<!--col-lg-10 col-lg-offset-1-->
+		<div class="container-fluid">
+			<!--头部-->
+			<div class="row xb_header">
+				<div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 ">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6 logo_content">
+							<img src="imgs/logo.png">
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+							<div class="header_right">
+								<a href="#" class="user_style text-right">
+									<img src="imgs/touxiang.png"><span class="name_text">学生名称</span>
+									<span class="glyphicon glyphicon-triangle-bottom"></span>
+								</a>
+								<ul class="top_menu">
+									<li>
+										<a href="personal_center/student_basic.html">个人中心</a>
+									</li>
+									<li>
+										<a href="javascript:;">退出</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--学校图片-->
+			<!--col-xs-offset-1 col-sm-offset-1-->
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12  " style="padding:0;position: relative">
+					<img  class="img-responsive" src="imgs/school-user-top-bg.png" width="100%"height="150px">
+					<div class="row" style="position: absolute;width:100%;height:100%; top:0;">
+						<div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 " style="position: absolute; height:100%;">
+							<div class="nav_top">
+								<!--修改处-->
+								<nav class="navbar navbar-default" role="navigation">
+								    <!--<div class="container-fluid">-->
+								    <div class="navbar-header">
+								        <button type="button" class="navbar-toggle" data-toggle="collapse"
+								                data-target="#example-navbar-collapse">
+								            <!--<span class="sr-only">切换导航</span>-->
+								            <span class="icon-bar"></span>
+								            <span class="icon-bar"></span>
+								            <span class="icon-bar"></span>
+								        </button>
+								            <!--<a class="navbar-brand" href="#">首页</a>-->
+								        <ul class="">
+								        	<li><a href="javascript:;">首页</a></li>
+								            <li><a href="javascript:;">实训中心</a></li>
+								            <li><a href="javascript:;">我的任务</a></li>
+								            <li class="dropdown">
+								                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+								                    公开课程 <b class="caret"></b>
+								                </a>
+								                <ul class="dropdown-menu">
+								                	<li><a href="javascript:;">全部课程</a></li>
+								                    <li class="divider"></li>
+								                    <li><a href="javascript:;">本科</a></li>
+								                    <li><a href="javascript:;">中职</a></li>
+								                    <li><a href="javascript:;">高职</a></li>
+								                    <li><a href="javascript:;">国家开放大学-专科</a></li>
+								                    <li><a href="javascript:;">国家开放大学-本科</a></li>
+								                    
+								                </ul>
+								            </li>
+								        </ul>
+								    </div>
+								    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+								        <ul class="nav navbar-nav">
+								        	<!--<li class="active_nav"><a href="#">首页</a></li>
+								            <li><a href="#">实训中心</a></li>
+								            <li><a href="#">我的任务</a></li>
+								            <li class="dropdown">
+								                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								                    公开课程 <b class="caret"></b>
+								                </a>
+								                <ul class="dropdown-menu">
+								                	<li><a href="javascript:;">全部课程</a></li>
+								                    <li class="divider"></li>
+								                    <li><a href="javascript:;">本科</a></li>
+								                    <li><a href="javascript:;">中职</a></li>
+								                    <li><a href="javascript:;">高职</a></li>
+								                    <li><a href="javascript:;">国家开放大学-专科</a></li>
+								                    <li><a href="javascript:;">国家开放大学-本科</a></li>
+								                    
+								                </ul>
+								            </li>-->
+								            <li><a href="#">成绩查询</a></li>
+								            <li><a href="#">能力档案</a></li>
+								            <li><a href="#">资料共享</a></li>
+								        </ul>
+								    </div>
+								    <!--</div>-->
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--中部内容区域-->
+
+			<div class="cotent" style="min-height: 400px;">
+                   <div id="cotent">
+                          <div class="con_form">
+                          	    <form class="form-horizontal" role="form">
+									  <div class="form-group has-success">
+									    <label for="firstname" class="col-xs-4 col-sm-2  control-label">任务名称</label>
+									    <div class="col-xs-6 col-sm-10">
+									      <input type="text" class="form-control"  placeholder="请输入任务名称">
+									    </div>
+									  </div>
+									  <div class="form-group has-success">
+									    <label for="lastname" class="col-xs-4 col-sm-2 control-label">开始时间</label>
+									    <div class="col-xs-6 col-sm-10">
+									      <input type="text" class="form-control"  id="text1" placeholder="请输入开始时间">
+									    </div>
+									  </div>
+									  <div class="form-group has-success">
+									    <label for="lastname" class="col-xs-4 col-sm-2 control-label">结束时间</label>
+									    <div class="col-xs-6 col-sm-10">
+									      <input type="text" class="form-control" id="text2" placeholder="请输入结束时间">
+									    </div>
+									  </div>
+									  <div class="form-group has-success">
+											    <label for="name"class="col-xs-4 col-sm-2 control-label">班级</label>
+											    <div class="col-xs-6 col-sm-10">
+												    <select class="form-control">
+												      <option>请选择班级</option>
+												      <option>班级2</option>
+												      <option>班级3</option>
+												      <option>班级4</option>
+												      <option>班级5</option>
+												    </select>
+												 </div>
+										</div>
+									    <div class="form-group" >
+										      <div class="col-xs-6 col-xs-10 col-xs-push-2">
+										           <label class="checkbox-inline">
+											        <input type="checkbox" id="Checkbox1" value="option1" checked> 选项 1
+											    </label>
+											    <label class="checkbox-inline">
+											        <input type="checkbox" id="Checkbox2" value="option2"> 选项 2
+											    </label>
+											    <label class="checkbox-inline">
+											        <input type="checkbox" id="Checkbox3" value="option3"> 选项 3
+											    </label>
+										      </div>
+										  </div>
+									  <div class="form-group">
+									    <div class="col-sm-offset-2 col-xs-6 col-sm-10">
+									      <button type="submit">登录</button>
+									    </div>
+									  </div>  
+									  
+									</form>
+                          </div>
+                   </div>
+			</div>
+			
+			<!--底部-->
+			<div class="row c" style="background-color: #f2f5fc;">
+				<div class="col-md-12 col-sm-12 col-xs-12 footer_content">
+					<p>版权所有@ 中德安普2013-2016京IPC备16003362号-1</p>
+					<p>建议使用IE浏览器（9.0版本以上）或其他高版本浏览器访问本站</p>
+				</div>
+			</div>
+		</div>		
+
+			<script type="text/javascript">
+				!function () {
+				    laydate.skin('danlan');
+				}();
+				
+				//日期范围限制
+				var start = {
+				    elem: '#text1',
+				    format: 'YYYY-MM-DD hh:mm:ss',
+				    min: laydate.now(),
+				    max: '2099-06-16',
+				    istime: true,
+				    istoday: true,
+				    choose: function (datas) {
+				        end.min = datas;
+				        end.start = datas;
+				    }
+				};
+				var end = {
+				    elem: '#text2',
+				    format: 'YYYY-MM-DD hh:mm:ss',
+				    min: laydate.now(),
+				    max: '2099-06-16',
+				    istime: true,
+				    istoday: true,
+				    choose: function (datas) {
+				        start.max = datas;
+				    }
+				};
+				laydate(start);
+				laydate(end);
+
+				</script>
+  </body>
+</html>

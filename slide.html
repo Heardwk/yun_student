@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+		<style>
+.htmlTips {
+	position: fixed;
+	right: 1%;
+	bottom: 30%;
+	text-align: center;
+}
+.serviceBox {
+	width: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	word-break: keep-all;
+	height: auto;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+	position: absolute;
+	left: -270px;
+	bottom: 51px;
+	color: #444444;
+	text-align: left;
+	font-size: 28px;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+.serviceBox div {
+	font-size: 14px;
+	line-height: 25px;
+	padding-left: 55px;
+	margin-top: 10px;
+	position: relative;
+}
+.serviceBox .iconfont {
+	font-size: 28px;
+	line-height: 28px;
+	position: absolute;
+	color: #888888;
+	left: 15px;
+}
+.serviceBox .hoverMsgDiv {
+	width: 55px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: -55px;
+	display: none;
+}
+.serviceBtn:hover .serviceBox {
+	display: block;
+	width: 260px;
+	overflow: visible;
+}
+.serviceBtn:hover .serviceBox .hoverMsgDiv {
+	display: block;
+	cursor: pointer;
+}
+.serviceBox:hover {
+	display: block;
+	width: 260px;
+	overflow: visible;
+}	
+.serviceBox:hover .hoverMsgDiv {
+	display: block;
+}
+.tipsMsgBox {
+	width: 45px;
+}
+.flextipsBox {
+	width: 45px;
+	height: 50px;
+	overflow: hidden;
+	margin-top: 1px;
+}
+.flextipsContainer {
+	width: 90px;
+	height: 50px;
+	display: flex;
+	display: webkit-flex;
+	justify-content: center;
+	margin-left: -45px;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+.flextipsBox:hover .flextipsContainer {
+	margin-left: 0;
+}
+.flextipsContainer>div {
+	width: 45px;
+	height: 50px;
+	color: white;
+	background-color: #157CF0;
+	cursor: pointer;
+	text-align: center;
+}
+.flextipsContainer>div p {
+	font-size: 12px;
+}
+.flextipsContainer>div:last-child {
+	font-size: 28px;
+	line-height: 50px;
+}
+.flextipsContainer>div p:nth-child(1) {
+	margin-top: 7px;
+	color: white;
+}
+.serviceBtn {
+	width: 45px;
+	color: white;
+	padding: 7px 0;
+	background-color: #157CF0;
+	font-size: 20px;
+	line-height: 20px;
+}
+.serviceBtn>p {
+	font-size: 14px;
+	line-height: 18px;
+}
+.goTopIco {
+	display: none;
+}
+/*修改处*/
+a{
+	text-decoration: none;
+}
+.serviceBtn div:last-child>a{
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+}
+.flextipsContainer div:first-child>a>p{
+	color: white;
+	font-size: 12px;
+	margin: 0;
+	margin-top: 5px;
+}
+.serviceBox div:nth-child(2)>p:last-child>a{
+	color: #157CF0;
+}
+.serviceBox div:nth-child(2)>p:last-child>a:hover{
+	color: #23527c;
+}
+.serviceBox div:nth-child(3)>p:last-child>a{
+	color: #157CF0;
+}
+.serviceBox div:nth-child(3)>p:last-child>a:hover{
+	color: #23527c;
+}
+.serviceBox div:nth-child(4)>p>a{
+	color: #157CF0;
+}
+.serviceBox div:nth-child(4)>p>a:hover{
+	color: #23527c;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+	.body {
+    max-width: 80%!important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.body {
+    max-width: 977px!important;
+    }
+}
+@media screen and (max-width: 991px) {
+	
+}
+</style>
+	<body>
+<!-- 提示 -->
+		<div class='htmlTips'>
+			<div class='tipsMsgBox'>
+				<div class='serviceBtn iconfont icon-kefu'>
+					<div class='serviceBox'>
+						<div class='hoverMsgDiv'></div>
+						<div>
+							<span class='iconfont icon-kefu'></span>
+							<p>电话咨询</p>
+							<p><a href='tel:0731-85219848-8009'>0731-85219848-8009</a></p>
+						</div>
+						<div>
+							<span class='iconfont icon-qq'></span>
+							<p>QQ咨询</p>
+							<p><a href='tencent://message/?uin=2326897863&Site=www.yunsx.com&Menu=yes'>在线客服</a><!--<span>客服2</span><span>客服3</span></p>-->
+							<!--<p><span>客服1</span><span>客服2</span><span>客服3</span></p>-->
+						</div>
+						<div><span class='iconfont icon-fankui'></span><p><a href='/C/FeedBack/' target='_blank'>聆听、建议反馈</a></p></div>
+					</div>
+					<div><a href='/C/FeedBack/'><p>咨</p><p>询</p><p>&amp;</p><p>反</p><p>馈</p></a></div></div>
+			</div>
+			<div class='flextipsBox downAppIco'>
+				<div class='flextipsContainer'>
+					<div><a href='http://c.yunsx.com/AppShare/?r=www.yunsx.com' target=''><p>下载</p><p>APP</p></a></div>
+					<div class='iconfont icon-APPxiazai'></div>
+				</div>
+			</div>
+			<div class='flextipsBox goTopIco'>
+				<div class='flextipsContainer'>
+					<div><p>返回</p><p>顶部</p></div>
+					<div class='iconfont icon-fanhuidingbu1'></div>
+				</div>
+			</div>
+		</div>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type='text/javascript'>
+$(function(){
+	$('.goTopIco').on('click',function(){
+		$('body,html').animate({scrollTop:0},1000);
+	});
+	$(window).scroll(function(event){
+		if($(window).scrollTop()>100) {
+			$('.goTopIco').css('display','block')
+		}else {
+			$('.goTopIco').css('display','none')
+		}
+	});
+
+})
+</script>
+
+	</body>
+</html>

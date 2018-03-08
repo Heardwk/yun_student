@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云上实训-学生</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/performance.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/performance.js"></script>
+</head>
+<body>
+<!--col-lg-10 col-lg-offset-1-->
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row xb_header">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 ">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 logo_content">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+                    <div class="header_right">
+                        <a href="#" class="user_style text-right">
+                            <img src="imgs/touxiang.png"><span class="name_text">学生名称</span><span
+                                class="glyphicon glyphicon-triangle-bottom"></span>
+                        </a>
+                        <ul class="top_menu">
+                            <li><a href="personal_center/student_basic.html">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--学校图片-->
+    <!--col-xs-offset-1 col-sm-offset-1-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12  " style="padding:0;position: relative">
+            <img src="imgs/xuexiao.png" width="100%">
+            <div class="row" style="position: absolute;width:100%;height:100%; top:0;">
+                <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 "
+                     style="position: absolute; height:100%;">
+                    <div class="nav_top">
+                        <ul class="list-inline nav_list">
+                            <li><a href="">首页</a></li>
+                            <li><a href="basic.html">实训中心</a></li>
+                            <li><a href="mission.html">我的任务</a></li>
+                            <li class="active_nav"><a href="performance.html">成绩查询</a></li>
+                            <li><a href="user_capacity.html">能力档案</a></li>
+                            <li><a href="data_sharing.html">资料共享</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中部内容区域-->
+    <div class="row c" style="min-height: 400px;">
+        <div  style="padding:0;position: relative">
+            <div class="chooice_content">
+                     <div class="student_mark">
+                                                       学生成绩查询
+                     </div>
+                     <div class="student_order">
+                           <ul>
+	                           	<li class="active">实训任务成绩</li>
+	                           	<li>综合实训成绩</li>
+	                           	<li>指标排名</li>
+                           </ul>
+                     </div>
+                     <div class="content">
+                     	   <!--实训任务成绩-->
+                     	   <div class="Practical_results list">
+                              <div class="table-responsive">
+								  <table class="table table-hover table-condensed table-striped table-bordered">
+								    <thead>
+								      <tr>
+								        <th>实训任务名称</th>
+								        <th>实训任务类型</th>
+								        <th>实训所属课程</th>
+                                        <th>实训成绩</th>
+                                        <th>班级排名（名次 / 参考人数）</th>
+                                        <th>教师评价</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>练习</td>
+								        <td>基础会计</td>
+								        <td>80</td>
+								        <td>10/40</td>
+								        <td>优</td>
+								     </tr>
+								     <tr>
+								        <td>基础会计任务</td>
+								        <td>测试</td>
+								        <td>基础会计</td>
+								        <td>78</td>
+								        <td>22/40</td>
+								        <td>良</td>
+								      </tr>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>练习</td>
+								        <td>基础会计</td>
+								        <td>80</td>
+								        <td>10/40</td>
+								        <td>优</td>
+								      </tr>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>练习</td>
+								        <td>基础会计</td>
+								        <td>80</td>
+								        <td>10/40</td>
+								        <td>优</td>
+								      </tr><tr>
+								        <td>基础会计任务</td>
+								        <td>练习</td>
+								        <td>基础会计</td>
+								        <td>80</td>
+								        <td>10/40</td>
+								        <td>优</td>
+								      </tr>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>练习</td>
+								        <td>基础会计</td>
+								        <td>80</td>
+								        <td>10/40</td>
+								        <td>优</td>
+								      </tr>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>练习</td>
+								        <td>基础会计</td>
+								        <td>80</td>
+								        <td>10/40</td>
+								        <td>优</td>
+								      </tr>
+								    </tbody>
+								  </table>
+								</div>
+                      </div>
+                           <!--综合实训成绩-->
+                     	   <div class="Practical_results list" style="display: none;">
+                              <div class="table-responsive">
+								  <table class="table table-hover table-condensed table-striped table-bordered">
+								    <thead>
+								      <tr>
+								        <th>岗位</th>
+								        <th>案例</th>
+								        <th>
+								        	 <select class="sel">
+								        	 	<option value="">行业</option>
+								        	 </select>
+								        </th>
+                                        <th>实训次数</th>
+                                        <th>完成次数</th>
+                                        <th>完成情况</th>
+                                        <th>得分</th>
+                                        <th>下载证书</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr>
+								        <td rowspan="3">会计</td>
+								        <td>案例1</td>
+								        <td>建筑业</td>
+								        <td>10</td>
+								        <td>10</td>
+								        <td>完成</td>
+								        <td>100</td>
+								        <td><a href="javascript:;">下载证书</a></td>
+								     </tr>
+								     <tr>
+								        
+								        <td>案例2</td>
+								        <td>商贸业</td>
+								        <td>15</td>
+								        <td>15</td>
+								        <td>完成</td>
+								        <td>100</td>
+								        <td><a href="javascript:;">下载证书</a></td>
+								      </tr>
+								      <tr>
+								       
+								        <td>案例3</td>
+								        <td>商贸业</td>
+								        <td>15</td>
+								        <td>15</td>
+								        <td>完成</td>
+								        <td>100</td>
+								        <td><a href="javascript:;">下载证书</a></td>
+								      </tr>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>案例4</td>
+								        <td>工业</td>
+								        <td>20</td>
+								        <td>20</td>
+								        <td>完成</td>
+								        <td>100</td>
+								        <td><a href="javascript:;">下载证书</a></td>
+								      </tr>
+								      <tr>
+								        <td>基础会计任务</td>
+								        <td>案例4</td>
+								        <td>工业</td>
+								        <td>20</td>
+								        <td>20</td>
+								        <td>完成</td>
+								        <td>100</td>
+								        <td><a href="javascript:;">下载证书</a></td>
+								      </tr>
+								      <tr>
+								        <td>出纳岗位</td>
+								        <td></td>
+								        <td></td>
+								        <td></td>
+								        <td></td>
+								        <td>完成</td>
+								        <td></td>
+								        <td></td>
+								      </tr>
+								      <tr>
+								        <td>防伪开票</td>
+								        <td></td>
+								        <td></td>
+								        <td></td>
+								        <td></td>
+								        <td>未完成</td>
+								        <td></td>
+								        <td></td>
+								      </tr>
+								    </tbody>
+								  </table>
+								</div>
+                             </div>
+                    	   <!--指标排名-->
+	                       <div class="explain-content list">
+								<table class="table table-striped table-bordered">
+									<thead>
+										<tr>
+											<th>课程名称</th>
+											<th>指标</th>
+											<th>分值</th>
+											<th>班级排名</th>
+											<th>校内排名</th>
+											<th>省内排名</th>
+											<th>全网排名</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="ta_co">
+											<td>课程名称</td>
+											<td>
+												<p>总题数</p>
+												<p>总次数</p>
+												<p>总时长</p>
+												<p>正确率</p>
+											</td>
+											<td>
+												<p>100</p>
+												<p>1</p>
+												<p>120</p>
+												<p>100%</p>
+											</td>
+											<td>
+												<p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+										</tr>
+										<tr  class="ta_co">
+											<td>课程名称</td>
+											<td>
+												<p>总题数</p>
+												<p>总次数</p>
+												<p>总时长</p>
+												<p>正确率</p>
+											</td>
+											<td>
+												<p>100</p>
+												<p>1</p>
+												<p>120</p>
+												<p>100%</p>
+											</td>
+											<td>
+												<p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+										</tr>
+										<tr  class="ta_co">
+											<td>课程名称</td>
+											<td>
+												<p>总题数</p>
+												<p>总次数</p>
+												<p>总时长</p>
+												<p>正确率</p>
+											</td>
+											<td>
+												<p>100</p>
+												<p>1</p>
+												<p>120</p>
+												<p>100%</p>
+											</td>
+											<td>
+												<p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+										</tr>
+										<tr  class="ta_co">
+											<td>课程名称</td>
+											<td>
+												<p>总题数</p>
+												<p>总次数</p>
+												<p>总时长</p>
+												<p>正确率</p>
+											</td>
+											<td>
+												<p>100</p>
+												<p>1</p>
+												<p>120</p>
+												<p>100%</p>
+											</td>
+											<td>
+												<p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+										</tr>
+										<tr  class="ta_co">
+											<td>课程名称</td>
+											<td>
+												<p>总题数</p>
+												<p>总次数</p>
+												<p>总时长</p>
+												<p>正确率</p>
+											</td>
+											<td>
+												<p>100</p>
+												<p>1</p>
+												<p>120</p>
+												<p>100%</p>
+											</td>
+											<td>
+												<p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+											<td>
+	                                            <p>1</p>
+												<p>40</p>
+												<p>1</p>
+												<p>20</p>
+											</td>
+										</tr>
+									</tbody>
+							</table>
+	                     </div>
+	                   
+                     
+                     </div>
+                    <div class="zoom_btn">展开 
+                     <i></i>
+                     </div>  	
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="row" >
+        <div class="col-md-12 col-sm-12 col-xs-12 footer_content">
+            <p>版权所有@ 中德安普2013-2016京IPC备16003362号-1</p>
+            <p>建议使用IE浏览器（9.0版本以上）或其他高版本浏览器访问本站</p>
+        </div>
+    </div>
+</div>
+
+<!--右侧固定页面内容-->
+<div class="right_flexd">
+    <ul>
+        <li class="first_box">
+            <a href="javascript:;">
+                <span class="iconfont icon-kefu"></span>
+                <p class="first_text">咨询&反馈</p>
+            </a>
+            <div class="flexd_panel">
+                <ul class="flexd_content">
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-kefu "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                                0731-85219848
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-qq"></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                            <ol class="list-inline">
+                                <li><a href="javascript:;">客服1</a></li>
+                                <li><a href="javascript:;">客服2</a></li>
+                                <li><a href="javascript:;">客服3</a></li>
+                                <li><a href="javascript:;">客服4</a></li>
+                                <li><a href="javascript:;">客服5</a></li>
+                                <li><a href="javascript:;">客服6</a></li>
+                            </ol>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-fankui "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                           <a href="javascirpt:;" style="line-height: 36px;">聆听、建议反馈</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-APPxiazai"></span>
+                    </div>
+                    <div class="text-content">
+                        <span >下载APP</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li><a href="javascript:;">
+            <div class="move_content">
+                <div class="icon-content">
+                    <span class="iconfont icon-zaixianliaotian"></span>
+                </div>
+                <div class="text-content">
+                    <span >在线 聊天</span>
+                </div>
+            </div>
+        </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+            <div class="move_content">
+                <div class="icon-content">
+                    <span class="iconfont icon-remenhuati"></span>
+                </div>
+                <div class="text-content">
+                    <span >热门 话题</span>
+                </div>
+            </div>
+        </a>
+        </li>
+        <li style="display: none" id="goTop">
+            <a href="#">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-fanhuidingbu"></span>
+                    </div>
+                    <div class="text-content">
+                        <span >返回 顶部</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script>
+    $(function () {
+        $(document.body).scroll(function () {
+            if($(document.body).scrollTop()>=80){
+                $("#goTop").show();
+            }
+            else {
+                $("#goTop").hide();
+            }
+        });
+        $("#goTop").on("click",function () {
+            $(document.body).animate({
+                scrollTop:0
+            })
+        })
+    })
+</script>
+</body>
+</html>

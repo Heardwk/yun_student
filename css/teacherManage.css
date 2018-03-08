@@ -1,0 +1,12 @@
+.title_h4{
+    padding:20px 0;
+}
+.chooice_content{
+    min-height: 220px;
+    background:#fff;
+    padding:20px;
+}
+.chooiceBtn_panel{
+    height:40px;
+    border-bottom:1px solid #E5E5E5;
+}

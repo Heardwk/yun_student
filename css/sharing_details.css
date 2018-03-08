@@ -1,0 +1,73 @@
+.content_panel{
+    width:100%;
+    position: relative;
+}
+.left_panel{
+    min-height: 343px;
+    margin-right: 342px;
+    padding-bottom:30px;
+    background:#fff;
+    border:1px solid #eee;
+}
+.right_panel{
+    position: absolute;
+    right: 0;
+    top:0;
+    width:322px;
+    min-height:343px;
+    background:#fff;
+    border:1px solid #eee;
+}
+.position_panel{
+    padding:15px 0;
+}
+.title_h5{
+    font-size: 16px;
+    padding:25px 20px;
+    border-bottom: 1px solid #eee;
+    color:#222;
+}
+.view_content{
+    padding:0 20px;
+}
+.bottom_panel{
+    min-height: 40px;
+    position: relative;
+    color:#888;
+    line-height: 29px;
+}
+.padding_20{
+    padding:20px 0;
+}
+.bottom_panel .glyphicon{
+    color:#ccc;
+    padding:0 3px 0 10px ;
+}
+.text_miaoshu{
+    padding:20px;
+    background:#F9FAFE;
+    min-height: 150px;
+}
+.list_ziliao li{
+    padding:20px;
+    background: #F9FAFE;
+    margin-top:20px;
+}
+.iconfont_style{
+    color:#5ea4f5;
+    font-size: 30px;
+}
+.btn_color,.btn_color:focus{
+    color:#157Cf0;
+}
+.btn_download{
+    margin:0 35px;
+}
+.right_list>li{
+    padding:10px 20px 0px 20px;
+    border-bottom: 1px solid #eee;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+

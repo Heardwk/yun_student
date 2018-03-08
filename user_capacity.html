@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云上实训-学生</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/user_capacity.css"/>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/abilityFile.css">
+    
+    <!--<script src="js/user_capacity.js"></script>-->
+</head>
+<body>
+<!--col-lg-10 col-lg-offset-1-->
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row xb_header">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 ">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 logo_content">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3"style="    text-align: right;">
+                    <a href="#" class="user_style text-right">
+                        <img src="imgs/touxiang.png"><span class="name_text">学生名称</span><span
+                            class="glyphicon glyphicon-triangle-bottom"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--学校图片-->
+    <!--col-xs-offset-1 col-sm-offset-1-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12  " style="padding:0;position: relative">
+            <img src="imgs/xuexiao.png" width="100%">
+            <div class="row" style="position: absolute;width:100%;height:100%; top:0;">
+                <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 "
+                     style="position: absolute; height:100%;">
+                    <div class="nav_top">
+                        <ul class="list-inline nav_list">
+                            <li><a href="basic.html">首页</a></li>
+                            <li><a href="mission.html">实训中心</a></li>
+                            <li><a href="tasks.html">我的任务</a></li>
+                            <li><a href="performance.html">成绩查询</a></li>
+                            <li class="active_nav"><a href="user_capacity.html">能力档案</a></li>
+                            <li><a href="data_sharing.html">资料共享</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中部内容区域-->
+    <div class="row  c" style="min-height: 400px;">
+            <h4 class="title_h4"><b></b><span>能力掌握情况</span></h4>
+            <div class="chooice_content">
+                <div class="chooiceBtn_panel row">
+                	<div class="user_panel clear">
+                        <!--<div id="canvasDiv" class="col-md-6"></div> 
+                        <div class="latitude_title col-md-6">
+                        	<div class="latitude">
+                        	  <p>分析纬度</p>
+                               <ul>
+                               	<li>基础知识&nbsp;<span>知识点掌握情况<i> 80%</i></span></li>
+                               	<li>会计岗位&nbsp;<span>完成3个案例，掌握情况为 <i>78%</i></span></li>
+                               	<li>出纳岗位&nbsp;<span>掌握情况为 <i>60%</i></span></li>
+                                <li>纳税申报&nbsp;<span>掌握情况为 <i>86%</i></span></li>
+                                <li>防伪开票&nbsp;<span>掌握情况为 <i>90%</i></span></li>
+                               </ul>
+                               </div>
+                        </div>-->
+                         <div class="chartContainer">
+			                <!--<p class="taskTop">能力掌握情况</p>-->
+			                <div class="chartContent">
+			                    <div class="chartBox">
+			                        <div id="chart"></div>
+			                    </div>
+			                    <div class="textContent">
+			                        <p class="reportTitle">分析报告</p>
+			                        <div class="reportText">
+			                            <p><span>基础知识</span>知识点掌握情况80%</p>
+			                            <p><span>会计岗位</span>完成3个案例，掌握情况为78%</p>
+			                            <p><span>出纳岗位</span>掌握情况为60%</p>
+			                            <p><span>纳税申报</span>掌握情况为86%</p>
+			                            <p><span>防伪开票</span>掌握情况为90%</p>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+                     </div>
+                      <style type="text/css">
+	                      	.chooice_content {
+								    /* max-width: 1200px; */
+							    margin: 0 auto;
+							    width: 80%%;
+							    width: 80%;
+							}
+							@media only screen and (min-width: 1024px){
+								.title_h4 {
+								    width: 80%;
+								    margin: 0 auto;
+								    margin-top: 60px;
+								    margin-bottom: 20px;
+								}
+							}
+							@media only screen and (max-width: 1024px) and (min-width: 992px){
+								.table {
+								    width: 100%;
+								    max-width: 100%;
+								    margin-bottom: 20px;
+								    margin-top: 20px;
+								    margin-left: 10px;
+								    
+								}
+							}
+							.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+						    border: 1px solid #d3e3f4;
+						    }
+						    .tabBox .table tr td:first-child{
+						    	text-align: left;
+						    	padding-left: 20px;
+						    	width: 20%;
+						    }
+						    .tabBox .table tr td:nth-child(2){
+						    	text-align: left;
+						    	padding-left: 20px;
+						    	width: 24%;
+						    }
+						    .tabBox .table tr td:nth-child(3),.tabBox .table tr td:nth-child(4){
+						    	text-align: center;
+						    	padding-left: 20px;
+						    	width: 20%;
+						    }
+						    .tabBox .table tr td:nth-child(5){
+						    	text-align: center;
+						    	padding-left: 20px;
+						    	width: 20%;
+						    }
+			            </style>
+                       <div class="tabBox">
+                        <!--<div class="latitude_table_h4 row"><b></b><span>课程总结评价</span></h4>-->
+                        	<h4 class="title_h4"style="width: 100%; margin-top: 32px;"><b></b><span>能力档案</span></h4>
+							<table class="table table-bordered">
+			                    <thead>
+			                        <tr>
+			                            <td class="">能力项目</td>
+			                            <td class="">测试项</td>
+			                            <td class="">考核分数</td>
+			                            <td class="">权重</td>
+			                            <td class="javascript:;">能力分数</td>
+			                        </tr>
+			                    </thead>
+			                    <tbody>
+			                        <tr>
+			                            <td class="">在线测试</td>
+			                            <td class="">在线测试情况</td>
+			                            <td class="">98</td>
+			                            <td class="">100%</td>
+			                            <!--<td class=""><a href="javascirpt:void(0)">查看详情</a></td>-->
+			                            <td class="">9.8</td>
+			                        </tr>
+			                        <tr>
+			                            <td class="">课程实训</td>
+			                            <td class="">课后练习情况</td>
+			                            <td class="">97</td>
+			                            <td class="">30%</td>
+			                            <td class="">29.1</td>
+			                        </tr>
+			                        <tr>
+			                            <td class="">综合实训</td>
+			                            <td class="">会计、出纳、报税、开票等</td>
+			                            <td class="">86</td>
+			                            <td class="">30%</td>
+			                            <td class="">25.8</td>
+			                        </tr>
+			                        <tr>
+			                            <td class="">技能竞赛</td>
+			                            <td class="">技能竞赛</td>
+			                            <td class="">70</td>
+			                            <td class="">20%</td>
+			                            <td class="">14</td>
+			                        </tr>
+			                        <tr>
+			                            <td class="">其他</td>
+			                            <td class="">登录时长、登录次数、练习次数</td>
+			                            <td class="">80</td>
+			                            <td class="">10%</td>
+			                            <td class="">8</td>
+			                        </tr>
+			                        <tr>
+			                            <td class="">合计</td>
+			                            <td class=""></td>
+			                            <td class=""></td>
+			                            <td class=""></td>
+			                            <td class="">86.7</td>
+			                        </tr>
+			                        <tr>
+			                            <td class="">评估成绩 <b style="color: #03d25f;;font-size: 22px;margin-left: 10px;">A</b></td>
+			                            <td class=""></td>
+			                            <td class=""></td>
+			                            <td class=""></td>
+			                            <td class=""></td>
+			                        </tr>
+			                    </tbody>
+			                </table>
+                        </div>
+                </div>
+        </div>
+    </div>
+<!--</div>-->
+    <!--底部-->
+    <div class="row" >
+        <div class="col-md-12 col-sm-12 col-xs-12 footer_content">
+            <p>版权所有@ 中德安普2013-2016京IPC备16003362号-1</p>
+            <p>建议使用IE浏览器（9.0版本以上）或其他高版本浏览器访问本站</p>
+        </div>
+    </div>
+    </div>
+<!--右侧固定页面内容-->
+
+<script type="text/javascript" src="js/echarts.common.min.js"></script>
+<!--图表-->
+<script type="text/javascript">
+  var myChart = echarts.init(document.getElementById('chart'));
+  option = {
+    color: ['#3398DB'],
+    title: {
+      subtext: ''
+    },
+    tooltip : {
+      trigger: 'axis',
+      formatter: '{b}:{c}%',
+      axisPointer : {
+        type : 'shadow'
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    toolbox: {
+      feature: {
+        dataView: {show: true, readOnly: false},
+        restore: {show: true},
+        saveAsImage: {show: true}
+      }
+    },
+    xAxis : [
+      {
+        type : 'category',
+        data : ['基础知识', '会计岗位', '出纳岗位', '纳税申报', '防伪开票'],
+        axisTick: {
+          alignWithLabel: true
+        }
+      }
+    ],
+    yAxis : [
+      {
+        type : 'value',
+        axisLabel: {
+          formatter: '{value}%'
+        }
+      }
+    ],
+    series : [
+      {
+        name:'直接访问',
+        type:'bar',
+        barWidth: 25,
+        label: {
+          normal: {
+            show: true,
+            formatter: '{c}%',
+            position: 'inside'
+          },
+        },
+        data:[80, 78, 60, 86, 90],
+      }
+    ]
+  };
+myChart.setOption(option);
+</script>
+</body>
+</html>

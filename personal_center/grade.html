@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云上实训-学生</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/basic.css"/>
+    <link rel="stylesheet" href="css/grade.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/student_basic.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row xb_header" style="margin-bottom: 20px">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 ">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 logo_content">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+                     <div class="header_right">
+                        <a href="#" class="user_style text-right">
+                            <img src="imgs/touxiang.png"><span class="name_text">学生名称</span><span
+                                class="glyphicon glyphicon-triangle-bottom"></span>
+                        </a>
+                        <ul class="top_menu">
+                            <li><a href="personal_center/student_basic.html">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--学校图片-->
+    <!--col-xs-offset-1 col-sm-offset-1-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12  " style="padding:0;position: relative">
+            <img src="imgs/xuexiao.png" width="100%">
+            <div class="row" style="position: absolute;width:100%;height:100%; top:0;">
+                <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 "
+                     style="position: absolute; height:100%;">
+                    <div class="nav_top">
+                        <ul class="list-inline nav_list">
+                            <li><a href="javascript:void(0)">首页</a></li>
+                            <li><a href="javascript:void(0)">实训中心</a></li>
+                            <li><a href="javascript:void(0)">我的任务</a></li>
+                            <li><a href="javascript:void(0)">成绩查询</a></li>
+                            <li><a href="javascript:void(0)">能力档案</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中部内容区域-->
+    <div class="row " style="min-height: 400px;max-width: 1200px;margin: auto;margin-top: 20px;">
+            <div class="chooice_content col-sm-2">
+				<ul>
+					<li data-content="基本信息">
+						<a href="student_basic.html"><i class="iconfont icon-remenhuati"></i>基本信息</a>
+						<p></p>
+					</li>
+					<li data-content="资料管理">
+						<a href="student_data.html"><i class="iconfont icon-remenhuati"></i>资料管理</a>
+						<p></p>
+					</li>
+					<li   class="active_li" data-content="我的评分">
+						<a href="javascript:void(0)"><i class="iconfont icon-remenhuati"></i>我的评分</a>            	 
+						<p></p>
+					</li>
+					<li data-content="个人收藏">
+						<a href="collect.html"><i class="iconfont icon-remenhuati"></i>个人收藏</a>
+						<p></p>
+					</li>
+					<li data-content="我的话题">
+						<a href="javascript:void(0)"><i class="iconfont icon-remenhuati"></i>我的话题</a>
+						<p></p>
+					</li>
+				</ul>
+            </div>
+            <div class=" col-sm-10">
+            	<div class="chooiceBtn_grade">
+                       <div class="grade_title">
+                          <h4>我的评分</h4> 
+                       </div>
+                       <div class="grade_conent">
+                       	 <span>综合得分<em>51</em>分 </span>
+                       	 <b>班级排名<i>20</i>名 </b>
+                       </div>
+                       <div class="grade_assessing">
+	                         <div class="grade_assessing_tit">
+		                	 <i></i>
+		                   	  <span>实训任务评分</span>
+	                	     </div>
+	                	     <table class="table table-striped table-hover table-bordered table-responsive" style="    margin: 0px 10px;">
+								  <thead>
+								    <tr>
+								      <th>一级指标</th>
+								      <th>二级指标</th>
+								      <th>权重</th>
+								      <th>分数</th>
+								      <th>我的评分</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								   <tr class="norm" >
+								      <td>过程性评价指标</td>
+								      <td></td>
+								      <td></td>
+								      <td></td>
+								      <td style="border-right: 1px solid #ddd!important;"></td>
+								   </tr>
+								    <tr>
+								      <td>参与度</td>
+								      <td>练习时长</td>
+								      <td>0.05</td>
+								      <td>5</td>
+								      <td>0.25</td>
+								    
+								    </tr>
+								    <tr>
+								      <td>学习态度</td>
+								      <td>练习完成比例</td>
+								      <td>0.15</td>
+								      <td>1.33</td>
+								      <td>0.25</td>
+								    </tr>
+								    <tr class="norm" >
+								      <td>结果性评价指标</td>
+								      <td></td>
+								      <td></td>
+								      <td></td>
+								      <td style="border-right: 1px solid #ddd!important;"></td>
+								   </tr>
+								    <tr>
+								      <td>规范性</td>
+								      <td>资料填写是否规范</td>
+								      <td>0.25</td>
+								      <td>20</td>
+								      <td>5</td>
+								    </tr>
+								    <tr>
+								      <td>完整性</td>
+								      <td>资料填写是否完整</td>
+								      <td>0.25</td>
+								      <td>20</td>
+								      <td>5</td>
+								    </tr>
+								    <tr>
+								      <td>准确性</td>
+								      <td>答题是否准确</td>
+								      <td>0.25</td>
+								      <td>20</td>
+								      <td>5</td>
+								    </tr>
+								    <tr  class="word">
+								      <td>合计</td>
+								      <td></td>
+								      <td>1</td>
+								      <td></td>
+								      <td>15</td>
+								    </tr>
+								  </tbody>
+								</table>
+							 <div class="grade_assessing_tit">
+			                	 <i></i>
+			                   	  <span>综合任务评分</span>
+	                	     </div>
+	                	      <table class="table table-striped table-hover table-bordered" style="margin: 0px 10px;">
+								  <thead>
+								    <tr>
+								      <th>一级指标</th>
+								      <th>二级指标</th>
+								      <th>权重</th>
+								      <th>评分标准</th>
+								      <th>我的评分</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								   <tr class="norm" >
+								      <td>过程性评价指标</td>
+								      <td></td>
+								      <td></td>
+								      <td></td>
+								      <td style="border-right: 1px solid #ddd!important;"></td>
+								   </tr>
+								    <tr>
+								      <td>独立性</td>
+								      <td>在线测试时长</td>
+								      <td>0.5</td>
+								      <td>100</td>
+								      <td>5</td>
+								    </tr>
+								    <tr class="norm" >
+								      <td>结果性评价指标</td>
+								      <td></td>
+								      <td></td>
+								      <td></td>
+								      <td style="border-right: 1px solid #ddd!important;"></td>
+								   </tr>
+								    <tr>
+								      <td>规范性</td>
+								      <td>资料填写是否规范</td>
+								      <td>0.25</td>
+								      <td>40</td>
+								      <td>10</td>
+								    </tr>
+								    <tr>
+								      <td>完整性</td>
+								      <td>资料填写是否完整</td>
+								      <td>0.25</td>
+								      <td>40</td>
+								      <td>10</td>
+								    </tr>
+								    <tr>
+								      <td>准确性</td>
+								      <td>答题是否准确</td>
+								      <td>0.25</td>
+								      <td>40</td>
+								      <td>10</td>
+								    </tr>
+								    <tr class="word">
+								      <td>合计</td>
+								      <td></td>
+								      <td>1</td>
+								      <td>220</td>
+								      <td>35</td>
+								    </tr>
+								  </tbody>
+								</table>
+                       </div>
+            	</div>
+           </div>
+    </div>
+
+    <!--底部-->
+    <div class="row footerBox" >
+        <div class="col-md-12 col-sm-12 col-xs-12 footer_content">
+            <p>版权所有@ 中德安普2013-2016京IPC备16003362号-1</p>
+            <p>建议使用IE浏览器（9.0版本以上）或其他高版本浏览器访问本站</p>
+        </div>
+    </div>
+</div>
+
+<!--右侧固定页面内容-->
+<!--右侧固定页面内容-->
+<div class="right_flexd">
+    <ul>
+        <li class="first_box">
+            <a href="javascript:;">
+                <span class="iconfont icon-kefu"></span>
+                <p class="first_text">咨询&反馈</p>
+            </a>
+            <div class="flexd_panel">
+                <ul class="flexd_content">
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-kefu "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                                0731-85219848
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-qq"></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                            <ol class="list-inline">
+                                <li><a href="javascript:;">客服1</a></li>
+                                <li><a href="javascript:;">客服2</a></li>
+                                <li><a href="javascript:;">客服3</a></li>
+                                <li><a href="javascript:;">客服4</a></li>
+                                <li><a href="javascript:;">客服5</a></li>
+                                <li><a href="javascript:;">客服6</a></li>
+                            </ol>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-fankui "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                           <a href="javascirpt:;" style="line-height: 36px;">聆听、建议反馈</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-APPxiazai"></span>
+                    </div>
+                    <div class="text-content">
+                        <span >下载APP</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li><a href="javascript:;">
+            <div class="move_content">
+                <div class="icon-content">
+                    <span class="iconfont icon-zaixianliaotian"></span>
+                            <b class="xx"></b>
+                </div>
+                <div class="text-content">
+                    <span >在线 聊天</span>
+                </div>
+            </div>
+        </a>
+        <!--消息-->
+                    <!--我的消息-->
+			  <div class="my_information">
+			      <div class="my_title">
+			          <ul>
+			          	  <li class="active_information">好友</li>
+			          	  <li>系统</li>
+			          </ul>
+			      </div>
+			   <div class="content_page">
+			   <div class="Switch">
+			      <div class="Search_Bar col-sm-12">
+			          <form class="" role="search">
+			                <input type="text" class="" placeholder="请输入好友名称">
+			            <button type="submit" class="btn btn-default">搜索</button>
+			        </form>
+			      </div>
+			      <div class="information_list">
+			      	<div class="group"><i class="glyphicon glyphicon-triangle-bottom"></i>我的同学和老师<b>(100)</b></div>
+			      	<div class="student_list">
+			      		<ul>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      			<li><i></i><a href="#">周周</a></li>
+			      		</ul>
+			      	</div>
+			      </div>
+			   </div>
+			   <!--系统消息-->
+	           <div id="stem">
+	           	    <ul>
+	           	    	<li><i></i><a href="#">云上实训系统</a></li>
+	           	    </ul>
+	           </div>
+			  </div>
+			 </div>
+			            <!--弹出框-->
+          <div class="popping ">
+                <div class="popping_title">
+                	<p><i></i><a href="#">周周</a></p><span><a href="#">x</a></span>
+                </div>
+                <div class="popping_conter clearfix">
+                       <div class="popping_left">
+                       	   <div id="triangle-left"></div>
+                           <i></i><p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                       </div>
+                       <div class="popping_right pull-right">
+                       	    <div id="triangle-right"> </div>
+                            <p>内容容内容内内容内容内容内容内容容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p><i></i>
+                       </div>
+                </div>
+                <div class="popping_bottom">
+                    <input type="text" name="" id="" value=""placeholder="请输入内容" />
+                    <span><a href="">发送</a></span>
+                </div>
+         </div>
+       </li>
+        <li>
+            <a href="javascript:;">
+            <div class="move_content">
+                <div class="icon-content">
+                    <span class="iconfont icon-remenhuati"></span>
+                </div>
+                <div class="text-content">
+                    <span >热门 话题</span>
+                </div>
+            </div>
+        </a>
+        </li>
+        <li style="display: none" id="goTop">
+            <a href="#">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-fanhuidingbu"></span>
+                    </div>
+                    <div class="text-content">
+                        <span >返回 顶部</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function () {
+        $(document.body).scroll(function () {
+            if($(document.body).scrollTop()>=80){
+                $("#goTop").show();
+            }
+            else {
+                $("#goTop").hide();
+            }
+        });
+        $("#goTop").on("click",function () {
+            $(document.body).animate({
+                scrollTop:0
+            });
+        });
+        $(".group").on("click",function(){
+        	$(".student_list>ul").toggle(100);
+        });
+        $(".my_title>ul>li").each(function(i,item){
+        	$(this).on("click",function(){
+        	$(this).addClass("active_information").siblings().removeClass("active_information")
+        	$(".content_page>div").eq(i).css("display","block").siblings().css("display","none");
+        	})
+        });
+        $(".move_content").click(function(){
+         $(".my_information").toggle(200);
+        });
+        $(".student_list>ul>li").on("click",function(){
+        	$(".popping").css("display","block")
+        });
+        $(".popping_title>span>a").on("click",function(){
+        	$(".popping").css("display","none")
+        });
+      })
+</script>
+</body>
+</html>

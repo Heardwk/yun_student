@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tabs</title>
+	</head>
+	<style type="text/css">
+		*{
+		 	list-style: none;
+		 	box-sizing: border-box;
+			
+		}
+		 .uu>li{
+		 	float: left;
+		 	margin-right: 20px;
+		 }
+		 .uu>li>a{
+		 	display:inline-block ;
+		 	width: 100px;
+		 	height:50px;
+		 	line-height: 50px;
+		 	text-decoration: none;
+            text-align: center;
+		 }
+		  .uu>li:before{
+		  	        box-sizing: border-box;
+			    content: "";
+			    width: 102px;
+			    height: 0px;
+			    border: 1px solid #157CF0;
+			    clip-path: inset(0% 100% 0% 0%);
+			    position: absolute;
+			    top: 66px;
+			    transition: all 0.5s linear;
+		  }
+		   .uu>li:hover:before{
+	  	    box-sizing: border-box;
+	  	    width: 102px;
+		    border: 1px solid #157CF0;
+		    clip-path: inset(0% 0% 0% 0%);
+		    position: absolute;
+		    top: 66px;
+		  }
+		  .cs{
+		  	border: 1px solid red;
+		  }
+         .nr{
+         	width: 100%;
+		 	float: left;
+         }		 
+		 .nr>li>a{
+            display: inline-block;
+		 	width: 400px;
+		 	height: 100px;
+		 	border: 1px solid red;
+		 }
+		 .nr>li{
+		 	display: none;
+		 }
+		 
+	</style>
+	<body>
+		<div class="">
+		    <ul class="uu">
+		    	<li class="cs"><a href="javascript:;">1</a></li>
+		    	<li><a href="javascript:;">2</a></li>
+		    	<li><a href="javascript:;">3</a></li>
+		    	<li><a href="javascript:;">4</a></li>
+		    </ul>                
+		    <div>
+		        <ul class="nr">
+		        	<li><a href="javascript:;">这是1的内容</a></li>
+		        	<li><a href="javascript:;">这是2的内容</a></li>
+		        	<li><a href="javascript:;">这是3的内容</a></li>
+		        	<li><a href="javascript:;">这是4的的内容</a> </li>
+		        </ul>
+		    </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var uu = document.querySelectorAll(".uu>li")
+		var lis = document.querySelectorAll(".nr>li")
+		for (var i=0;i<uu.length;i++) {
+			uu[i].index= i;
+              uu[i].onclick =  function(){
+            	this.setAttribute("class","cs");
+              	for (var j=0;j<lis.length;j++) {
+              		lis[j].style.display="none";
+              		console.log(this)
+            		lis[this.index].style.display="block"
+              	}
+              }
+		}
+		
+	   var a1 = function(a,b){
+		   	   	this.a = a;
+		   	   	this.b = b;
+		   	   	this.int =function(){
+		   	   	 	 console.log(this.a)
+       	             console.log(this)
+		   	   	 	 
+		   	   	 }
+             }
+       var a2 = function(a,b){
+		   	   	 return a - b
+             }
+       var a3 = function(){
+       	     a1.call(this,2,3)
+
+       }
+         var ss = new a3; 
+         ss.int()
+
+//      var a1 = function(x,y){
+//      	console.log(x+y)
+//      	
+//      }
+//      var a2 = function(x,y){
+//      	console.log(x-y);
+//      
+//      }
+//      a1.call(a2,5,5)
+
+	</script>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <script type="text/javascript">
+        var _speedMark = new Date();
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <title>Loading</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            color: #555;
+            font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        input, textarea {
+            border: 1px solid #ddeafb;
+        }
+
+            input[type=submit], input[type=button] {
+                cursor: pointer;
+            }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            outline: none;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+.hint>a {
+    position: absolute;
+    font-size: 15px;
+    /* text-align: left; */
+    /* margin-bottom: 5px; */
+    /* margin-left: 50%; */
+    /* line-height: 23px; */
+    align-items: baseline;
+    display: flex;
+    color: #157CF0;
+    opacity: 0.5;
+    flex-wrap: nowrap;
+    width: 140px;
+    margin-top: 28px;
+    right: -44%;
+    top: -21px;
+}
+@media  screen and (min-width: 300px) and (max-width: 678px) {
+	.hint>a {
+    position: absolute;
+    font-size: 15px;
+    /* text-align: left; */
+    /* margin-bottom: 5px; */
+    /* margin-left: 50%; */
+    /* line-height: 23px; */
+    align-items: baseline;
+    display: flex;
+    color: #157CF0;
+    opacity: 0.5;
+    flex-wrap: nowrap;
+    width: 140px;
+    margin-top: 28px;
+    right: -124%;
+    top: -21px;
+}
+}
+.hint>a:hover{
+     
+    color: #157CF0;
+   opacity: 1;
+        }
+        .right {
+            border-color: #1dc091;
+        }
+
+        .hint_right {
+            color: #1dc091;
+        }
+
+        .wrong {
+            border-color: #EA5A70;
+        }
+
+        .hint_wrong {
+            color: #EA5A70;
+        }
+
+        input[type=submit], .button {
+            display: block;
+            margin: 0 auto;
+            line-height: 20px;
+            font-size: 20px;
+            color: #fff;
+            background: #0f88eb;
+            border: 0;
+        }
+
+        .lable {
+            display: inline-block;
+        }
+
+        .login_cont {
+            margin: 0 auto;
+            width: 100%;
+            background-image: url("imgs/bg.jpg");
+            background-repeat: no-repeat;
+        }
+
+            .login_cont .input_signup, .login_cont .input_signin {
+                display: none;
+            }
+
+        .input_signin {
+            padding: 20px;
+        }
+
+        .login_cont .active {
+            display: block;
+        }
+
+        .login_nav {
+            height: 54px;
+            text-align: center;
+            margin-bottom: 10px;
+            background: #EBF2FA;
+            line-height: 54px;
+        }
+
+        .nav_slider {
+            display: inline-block;
+        }
+
+            .nav_slider a {
+                display: inline-block;
+                width: 65px;
+                line-height: 35px;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .nav_slider .focus {
+                border-bottom: 2px solid #3cf;
+            }
+
+
+
+
+#user{
+	margin-bottom:35px;
+	position: relative;
+}
+.zhengq{
+	color: #3c763d;
+}
+.cuow{
+	color: #a94442;
+}
+#pwd{
+	position: relative;
+	
+}
+.yanzheng{
+	margin-top: 20px;
+	    display: flex;
+    align-items: baseline;
+}.yanzhengma>img{
+	height: 34px;
+	margin-left: 66px;
+
+}
+.db_user>i{
+	position: absolute;
+    right: 12px;
+    top: 10px;
+    z-index: 100;
+}
+form{
+	position: relative;
+	width: 80%;
+    margin: auto;
+        margin-top: 33px;
+}
+#uname-msg{
+	   width: 56%;
+    height: 52px;
+    line-height: 53px;
+    /* padding-left: 10px; */
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    background-color: #a94442;
+    padding: 5px;
+}
+.db_passwd>i{
+	position: absolute;
+    right:12px;
+    top: 10px;
+    z-index: 100;
+}
+.yan>img{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    height: 34px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+   
+}
+span.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #EBF2FA;
+    border: 1px solid #7baaba;
+    border-radius: 4px;
+}
+input.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #7baaba;
+    border-radius: 4px;
+    }
+    </style>
+</head>
+<body>
+    <div class="login_cont">
+        <div class="login_nav">
+            <div id="nav_slider" class="nav_slider">
+                <a href="javascript:void(0)" class="signin">学生</a>
+                <a href="javascript:void(0)" class="signin">老师</a>
+                <a href="javascript:void(0)" class="signin">教务</a>
+            </div>
+        </div>
+
+	<form action="" id="from" class="bs-example bs-example-form">
+	  <div id="user"class="input-group ">
+	  	    <span class="input-group-addon">用户名</span>
+	  	    <input type="text" class="form-control" placeholder="用户名" name="uname" id="uname">
+	  	    <span class="db_user"></span>
+		</div>
+		<div id="pwd"class="input-group">
+			 <span class="input-group-addon"style="padding-right: 26px;">密码</span>
+		     <input type="password" class="form-control" placeholder="密码"name="upwd" id="pwd">
+			 <span class="db_passwd"></span>
+		</div>
+			<div id="yanzheng" class="yanzheng input-group"style="width: 50%;" >
+				 <span class="input-group-addon"style="padding-right:12px;">验证码</span>
+		         <input type="text" class="form-control" placeholder="验证码"name="yanzhengma" id="yanzhengma">
+		         <span class="yan"></span>
+		         <div class="hint"><a href="javascript:;">忘记密码？？</a></div>
+			</div>
+			<span id="uname-msg"></span><br>
+		<input type="button" value="登录"id="bt-login">
+	</form>
+    </div>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		 $(document).ready(function(){
+			$("#uname-msg").css("background-color","white");
+			var $txtName=$("[name=uname]");
+			var $txtPwd=$("[name=upwd]");
+			var $spanName=$("#uname-msg");
+			var $yanzhengma=$("#yanzhengma");
+			var $db_user=$(".db_user");
+			var $db_passwd=$(".db_passwd");
+			$txtPwd.focus(function(){
+					$("#uname-msg").css("background-color","white");
+			//	/^[0-9a-zA-Z\u4e00-\u9fa5_]{3,16}$/.test("12");
+             if($txtName.val().length<3||$txtName.val().length>9)
+				{
+					$("#user").addClass("has-error has-feedback")
+					$spanName.html("用户名必须介于3~9位之间!");
+					$("#uname-msg").css("background-color","#a94442");
+					$db_user.html("<i class='glyphicon glyphicon-remove cuow'></i>")
+				}else{
+					$db_user.html("<i class='glyphicon glyphicon-ok zhengq'></i>");
+					$spanName.html("");
+					$txtName.addClass("ok")
+					$("#user").removeClass("has-error has-feedback").addClass("has-success has-feedback")
+					$("#uname-msg").css("background-color","white");
+					
+				}
+           });
+           	$yanzhengma.focus(function(){
+               if($txtPwd.val().length<6||$txtPwd.val().length>8){
+						$("#pwd").addClass("has-error has-feedback")
+						$spanName.html("密码必须介于6~8位之间!");
+					    $("#uname-msg").css("background-color","#a94442");
+					    $db_passwd.html("<i class='glyphicon glyphicon-remove cuow'></i>");
+					}
+					else{
+						$db_passwd.html("<i class='glyphicon glyphicon-ok zhengq'></i>");
+						$("#pwd").removeClass("has-error has-feedback").addClass("has-success has-feedback");
+						$("#uname-msg").css("background-color","white");
+						$(".yan").html("<img class='img-responsive' src='http://sc.cost88.com/LoginHelper/GetVerifyCode?UserName=123123&ValidatecodeType=Login&t=0.24745963827491368'/>")
+                    }
+           });
+             	$yanzhengma.blur(function(){
+//						验证码
+						if ($yanzhengma.val().length!==4) {
+						 	$spanName.html("验证码必须是四位!");
+					        $("#uname-msg").css("background-color","#a94442");
+						 	$("#yanzheng").addClass("has-error has-feedback");
+						 } else{
+						 	$("#yanzheng").removeClass("has-error has-feedback").addClass("has-success has-feedback");
+                            $("#uname-msg").css("background-color","white");
+               }
+           });
+               $("#bt-login").click(function(){
+                console.log($(".form-control").parent().eq(0).hasClass("has-success has-feedback"))
+                 var flag = true;
+		            for (var i = 0; i < $(".form-control").length; i++) {
+		                if ($(".form-control").parent().eq(i).hasClass("has-success has-feedback")==false) {
+		                    flag = false;
+		                    alert("提交失败")
+		                    break;
+
+		                }
+		            }
+		            if (flag) {
+		            	console.log(flag)
+		                alert("提交成功")
+		                
+		            }
+		            else {
+		                 console.log("错误")
+		            }
+               });
+		});
+		
+	</script>	
+    <script type="text/javascript">
+          window.onload = function () {
+              var navSlider = document.getElementById("nav_slider");
+              var signin = navSlider.getElementsByClassName("signin");
+              var focus = signin[0];
+              focus.className = "signin focus";
+              for (var i = 0; i < signin.length; i++) {
+                  signin[i].onclick = function (i) {
+                      focus.className = "signin";
+                      this.className = "signin focus";
+                      focus = this;
+                  }
+              }
+          }
+
+    </script>
+    <script type="text/javascript">
+    	//http://sc.cost88.com/LoginHelper/GetVerifyCode?UserName=123123&ValidatecodeType=Login&t=0.24745963827491368
+	
+//      $("form").on("submit", function () {
+//			if(false){
+//				alert("ok");
+//				
+//				return false;
+//			}
+//          return false;
+//      });
+
+//	$(".cancel").click(function() {
+//		validator.resetForm();
+//	});
+//	$.validator.setDefaults({
+//  submitHandler: function() {
+//    alert("提交成功!");
+//  }
+//});
+
+    </script>
+    <!--<script src="/Js/Base/ta.js?v=20170908"></script>-->
+</body>
+</html>

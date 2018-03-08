@@ -1,0 +1,425 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, legend, button
+form, fieldset, input, textarea, p, blockquote, th, td, header {
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    color: #212121;
+    font-size: 14px;
+    font-family: "微软雅黑", "宋体", "Arial Narrow";
+    height:100%;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+
+/* 短引用的内容可取值：''或"" */
+q:before, q:after {
+    content: "";
+}
+
+/* 缩写，图片等无边框 */
+fieldset, img, abbr, acronym {
+    border: 0 none;
+}
+
+abbr, acronym {
+    font-variant: normal;
+}
+
+legend {
+    color: #000;
+}
+
+/* 清除特殊标记的字体和字号 */
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 上下标 */
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+/* 设置表格的边框被合并为一个单一的边框, 指定分隔边框模型中单元格边界之间的距离为0*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 表格标题及内容居左显示 */
+caption, th {
+    text-align: center;
+}
+
+input, img, select {
+    vertical-align: middle;
+}
+
+/* 清除列表样式 */
+ol, ul {
+    list-style: none;
+}
+
+/* 输入控件字体 */
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/* 标题元素样式清除 */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* 链接样式 */
+del, ins, a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+/* 鼠标样式 */
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius:2px;
+    background: #2b8eb8;
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*
+初始化完毕
+*/
+
+body {
+    background: #F6F7FC;
+}
+
+.xb_header {
+    min-height: 80px;
+    background: #fff;
+    line-height: 80px;
+}
+
+.user_style {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+
+.name_text {
+    padding: 0 10px;
+}
+
+.user_style .glyphicon-triangle-bottom {
+    font-size: 12px;
+}
+
+.img_panel {
+    height: 230px;
+    padding: 0;
+    background: url("../imgs/xuexiao.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav_top {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background: rgba(0, 0, 0, 0.27);
+    line-height: 100%;
+}
+
+.nav_list {
+    height: 100%;
+}
+
+.nav_list li {
+    width: 10%;
+    height: 100%;
+    padding: 0;
+}
+
+.nav_list li a {
+    display: inline-block;
+    height: 100%;
+    line-height: 56px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    /*  padding:0 40px;*/
+    width: 100%;
+    text-align: center;
+}
+
+.nav_list .active_nav a {
+    background: #157CF0;
+}
+
+.right_flexd {
+    position: fixed;
+    /* top:315px;*/
+    top: 30%;
+    right: 20px;
+    min-height: 200px;
+    width: 48px;
+    border: 1px solid #E5E5E5;
+}
+
+.right_flexd>ul>li {
+    height: 53px;
+    border-bottom: 1px solid #E5E5E5;
+    text-align: center;
+    line-height: 53px;
+    background: #157CF0;
+}
+
+.first_text {
+    padding: 0 11px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.right_flexd>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.right_flexd>ul>li .iconfont {
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+.right_flexd>ul>.first_box {
+    height: 173px;
+    position: relative;
+}
+
+.flexd_panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height:240px;
+    transition: all 0.4s linear;
+    visibility: hidden;
+}
+.flexd_content{
+    position: absolute;
+    top:0;
+    right: 10px;
+    width:100%;
+    height:240px;
+    background:#fff;
+    text-align: left;
+    padding:20px;
+    box-shadow: 0 0 4px 6px rgba(0,0,0,0.1);
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.4s linear;
+}
+.right_flexd ul .first_box:hover .flexd_panel{
+    visibility: visible;
+    left: -260px;
+    width: 260px;
+}
+.right_flexd ul .first_box:hover .flexd_panel .flexd_content{
+    visibility: visible;
+}
+.flexd_content>li{
+    float: left;
+    width: 100%;
+    min-width: 210px;
+}
+.flexd_panel .flexd_content>li .iconfont{
+    font-size: 28px;
+    color:#888;
+}
+.text_show{
+    line-height: 26px;
+    max-width: 150px;
+}
+.icon_content{
+    padding:0 10px;
+}
+.color_888{
+    color:#888;
+}
+.color_444{
+    color:#444;
+}
+.move_content{
+    width:92px;
+    position: absolute;
+    left: 0;
+    transition: all 0.4s linear;
+}
+.move_content:hover{
+    left: -46px;
+    transition: all 0.4s linear;
+}
+.text-content,.icon-content{
+    width:46px;
+    height:52px;
+    float: left;
+    color:#fff;
+}
+.text-content{
+    line-height: 20px;
+    padding:6px 5px;
+}
+.footer_content{
+    height:85px;
+    background:#313237;
+    padding:20px 0;
+    color: rgba(255, 255, 255, 0.83);
+    text-align: center;
+}
+/*********************提示框样式*****************/
+.tooltip_panel{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.21);
+    top:0;
+    left: 0;
+    z-index:1000;
+    display: none;
+}
+.tooltip_content{
+    width:400px;
+    min-height:200px;
+    background:#fff;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 auto;
+    top:35%;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+.tooltip_panel h4{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #E5E5E5;
+    padding:15px 20px;
+}
+.btn_cha,.btn_cha:focus{
+    border:1px solid #E5E5E5;
+    padding:0 4px;
+    color:#888;
+}
+.btn_cha:hover{
+    color: #444;
+    border: 1px solid #444;
+}
+.message_content{
+    padding:20px;
+    min-height: 100px;
+    text-indent: 10px;
+    font-size: 16px;
+}
+.btn_panel{
+    height:50px;
+    padding:10px 20px;
+    border-top:1px solid #E5E5E5;
+}
+.btn_basic{
+    padding:5px 15px;
+    margin-left:15px;
+}
+
+/*******************按钮样式库********************************/
+/*蓝色边框按钮*/
+.btn_borderblue,.btn_borderblue:focus{
+    border:1px solid #157CF0;
+    color:#157CF0;
+    border-radius: 2px;
+}
+.btn_borderblue:hover{
+    background:#157CF0;
+    color:#fff;
+}
+/*蓝色背景按钮*/
+.btn_backgroundblue,.btn_backgroundblue:focus{
+    background:#157CF0;
+    color:#fff;
+    border-radius: 2px;
+    border:1px solid #157CF0;
+}
+.btn_backgroundblue:hover{
+    background:#2466B2;
+    border:1px solid #2466B2;
+    color:#fff;
+}
+
+/* 默认蓝色背景白色字体按钮 */
+.default-blue-btn {
+    padding: 5px 15px;
+    background-color: #157Cf0;
+    border: 1px solid #157Cf0;
+    color: white;
+}
+.default-blue-btn:hover {
+    background-color: #2466B2;
+    border: 1px solid #2466B2;
+    color: white;
+}
+.default-blue-btn:link {
+    color: white;
+}
+/* 默认白色背景蓝色字体按钮 */
+.default-white-btn {
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid #157CF0;
+    border: 1px solid #157Cf0;
+    color: #157Cf0;
+}
+.default-white-btn:hover {
+    background-color: #157Cf0;
+    border: 1px solid #157Cf0;
+    color: white;
+}

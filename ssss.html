@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body><!doctype html>
+
+<a href="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" download="file.mp4">下载</a>
+	</body>
+	<script>
+		if ( ! Modernizr.adownload ) {
+		var $link = $('a');
+		$link.each(function() {
+		var $download = $(this).attr('download');
+		if (typeof $download !== typeof undefined && $download !== false) {
+		var $el = $('<p>').addClass('download-instruction').text('Right-click and select "Download Linked File"');
+		$el.insertAfter($(this));
+		}
+		});
+		}
+	</script>
+</html>

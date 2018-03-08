@@ -1,0 +1,143 @@
+table{
+	text-align: center;
+}
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+a:hover{
+	color: #157CF0!important;
+}
+.title_h4>b{
+    display: inline-block;
+    width: 5px;
+    background-color: #157cf0;
+    height: 20px;
+    margin-right: 20px;
+}
+.title_h4{
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	margin-left: 93px;
+}
+
+.title_h4>span{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.latitude_table_h4{
+	margin: 0 auto;
+	margin-bottom: 20px;
+/*	margin-left: 93px;	*/
+}
+.latitude_table_h4>span{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.latitude_table_h4>b{
+    display: inline-block;
+    width: 5px;
+    background-color: #157cf0;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+    
+}
+.c{
+	background: url("../imgs/bg.jpg")no-repeat;
+}
+.chooice_content{
+	 max-width: 1200px;
+    margin: 0 auto;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+thead>tr{
+	background-color: #c0deeb;
+}
+.chooiceBtn_panel{
+	margin: 0 auto;
+}
+.latitude>p{
+	margin-bottom: 30px;
+	color: 20px;
+}
+.latitude>ul>li{
+   width: 100%;
+   padding: 10px 0px ;
+   color: #888888;
+   
+}
+.latitude>ul>li>span{
+   margin-left: 20px;
+   color: #888888;
+}
+.latitude>ul>li>span>i{
+	display:inline-block;
+    font-style:normal;
+}
+.latitude{
+	margin-left: 229px;
+	margin-top: 50px;
+}
+.caption, th {
+   text-align:left; 
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+.latitude{
+	margin-left: 117px;
+	margin-top: 50px;
+}
+.table {
+    width: 98%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+}
+.title_h4 {
+	max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width:1024px ) {
+	.title_h4 {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    
+}
+}
+@media only screen and  (max-width: 992px) {
+	.title_h4{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	margin-left: 93px;
+}
+}
+.user_panel{
+	border: 1px solid #DDDDDD;
+	    height: 324px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+	canvas{
+	width: 659px!important;
+    height: 300px!important;
+	}
+}

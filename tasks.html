@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云上实训-课程管理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-icon/iconfont.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/tasks.css">
+
+</head>
+<body>
+<!--col-lg-10 col-lg-offset-1-->
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row xb_header">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 ">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 logo_content">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+                    <div class="header_right">
+                        <a href="#" class="user_style text-right">
+                            <img src="imgs/touxiang.png"><span class="name_text">学生名称</span><span
+                                class="glyphicon glyphicon-triangle-bottom"></span>
+                        </a>
+                        <ul class="top_menu">
+                            <li><a href="personal_center/student_basic.html">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--学校图片-->
+    <!--col-xs-offset-1 col-sm-offset-1-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12  " style="padding:0;position: relative">
+            <img src="imgs/xuexiao.png" width="100%">
+            <div class="row" style="position: absolute;width:100%;height:100%; top:0;">
+                <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 "
+                     style="position: absolute; height:100%;">
+                    <div class="nav_top">
+                        <ul class="list-inline nav_list">
+                            <li><a href="">首页</a></li>
+                            <li><a href="basic.html">实训中心</a></li>
+                            <li class="active_nav"><a href="mission.html">我的任务</a></li>
+                            <li><a href="performance.html">成绩查询</a></li>
+                            <li><a href="user_capacity.html">能力档案</a></li>
+                            <li><a href="data_sharing.html">资料共享</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中部内容区域-->
+    <div class="row" style="min-height: 400px;">
+        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 " style="padding:0;">
+            <div class="user_position">
+                <a href="teacherIndex.html">实训中心</a> > <span>基础会计</span>
+            </div>
+            <div class="plan_panel">
+                <dl class="box_dl border_gray">
+                    <dt><img src="imgs/book_coruses.png"></dt>
+                    <dd>
+                        <h5>《会计基础》概述</h5>
+                        <div class="bewrite">
+                            会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述会计基础的基本描述
+                        </div>
+                        <div class="class_content">
+                            任课教师：白洁
+                        </div>
+                    </dd>
+                </dl>
+                <div class="plan_content border_gray">
+                    <h5 class="color_888">实训计划 <a href="addTrainingSummary.html"class="color_blue pull-right hide">+添加实训计划</a></h5>
+                    <ul class="plan_list">
+                        <li class="color_888 text-center hide">未发布实训计划</li>
+                        <li>
+                            <span class="color_444">基础会计_实训计划1</span>
+                            <span class="color_888">2017-12-04</span>
+                            <a class="color_blue" href="my_course.html">查看</a>
+                            <a class="color_blue remove_plan hide" href="javascript:;">删除</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="plan_content">
+                    <h5 class="color_888">实训总结<a href="trainingSummar.html" class="color_blue pull-right hide">+发布实训总结</a>
+                    </h5>
+                    <div class="summarize_panel">
+                        <div class="list_no hide">未发布实训总结</div>
+                        <ul class="list-inline summarize_list ">
+                            <li>
+                                <a href="javascript:;" class="remove_icon"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="teacher.html"><img src="imgs/wancheng.png"></a>
+                            </li>
+                            <li>
+                                <a class="remove_icon"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="write.html"><img src="imgs/jinxing.png"></a>
+                            </li>
+                            <li>
+                                <a class="remove_icon"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="detail.html"><img src="imgs/th.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="course_content ">
+                <h5 class="title_style"><span class="title_text">课程内容</span>
+                    <a class="btn_borderblue btn_style pull-right hide" href="releaseTask.html">发布任务</a>
+                </h5>
+                <div class="content_panel">
+                    <div class="left_menu" id="left_menu">
+                        <h5 class="blue_bg">知识点</h5>
+                        <div class="innerUl">
+
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills nav_style" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                                      data-toggle="tab">全真案例</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                                       data-toggle="tab">解析&amp;资料</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel tab_style" class="tab-pane active" id="home">
+                                <table class="table table_style">
+                                    <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>案例名称</th>
+                                        <th>
+                                            <select class="select_table">
+                                                <option>题型</option>
+                                                <option>多选题</option>
+                                                <option>图表填空题</option>
+                                            </select>
+                                        </th>
+                                        <th>练习次数</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>这里是案例名称</td>
+                                        <td>单选题</td>
+                                        <td><span class="toggle">3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>这里是案例名称</td>
+                                        <td>多选题</td>
+                                        <td><span class="toggle">2</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane " id="profile">
+                                <h5 class="title_h5">平台解析</h5>
+                                <div class="jiexi_panel">
+                                    <div class="jiexi_content">
+                                        这里有解析内容
+                                    </div>
+                                    <div class="ziliao">
+                                        <a class="btn_ziliao" href="javascript:;">辅助资料</a>
+                                    </div>
+                                </div>
+                                <h5 class="title_h5">教师解析</h5>
+                                <div class="jiexi_panel">
+                                    <div class="jiexi_content show_btn" id="jiexi_content">
+                                        <a id="add_btn_jiexi" class="add_btn hide" href="javascript:;"><img src="imgs/add.png"></a>
+                                        <div id="jiexi_text">
+
+                                        </div>
+                                    </div>
+                                    <div class="ziliao">
+                                        <!--去掉样式 btn_none 颜色改变-->
+                                        <a id="see_btn" class="btn_ziliao btn_none" href="javascript:;">查看资料</a>
+                                        <span class="number_c hide">(您已上传 <span id="number_chuan">0</span> 条)</span>
+                                        <a id="btn_shangchuan" href="javascript:;" class="btn_borderblue pull-right btn_noborder hide">+上传资料</a>
+                                    </div>
+                                </div>
+                                <h5 class="title_h5"><a href="javascript:;" class="btn_borderblue btn_noborder ">其他教师分析资料
+                                    >></a></h5>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <h5 class="title_style"><span class="title_text">课程综合实训</span></h5>
+            <div class="table_content">
+                <table class="table table_style">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>名称</th>
+                        <th>练习次数</th>
+                        <th>最终成绩</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>基础会计</td>
+                        <td>3</td>
+                        <td>90</td>
+                        <td><span class="toggle">开始练习/重置</span></td>
+                    </tr>
+                    <tr>
+                         <td>01</td>
+                        <td>基础会计</td>
+                        <td>3</td>
+                        <td>90</td>
+                        <td><span class="toggle">开始练习</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h5 class="title_style"><span class="title_text">错题总汇</span></h5>
+            <div class="table_content">
+                <table class="table table_style">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>案例名称</th>
+                        <th>所属知识点</th>
+                        <th>
+                    	  <select class="select_table">
+                            <option>题型</option>
+                            <option>多选题</option>
+                            <option>单选题</option>
+                            <option>图表填空题</option>
+                           </select>
+	                     </th>
+                        <th>练习次数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>这里是案例名称</td>
+                        <td>A1_1_1知识点</td>
+                        <td>单选题</td>
+                        <td><span class="toggle">8</span></td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>这里是案例名称</td>
+                        <td>A1_1_1知识点</td>
+                        <td>单选题</td>
+                        <td><span class="toggle">8</span></td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>这里是案例名称</td>
+                        <td>A1_1_1知识点</td>
+                        <td>单选题</td>
+                        <td><span class="toggle">8</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-md-12 col-sm-12 col-xs-12 footer_content">
+            <p>版权所有@ 中德安普2013-2016京IPC备16003362号-1</p>
+            <p>建议使用IE浏览器（9.0版本以上）或其他高版本浏览器访问本站</p>
+        </div>
+    </div>
+</div>
+
+<!--遮罩弹窗-->
+<div class="tooltip_panel" id="tooltip_course">
+    <!--添加解析-->
+    <div id="jiexi_panel" class="shade_content shade_jiexi ">
+        <h4>添加知识点解析 <a href="javascript:;" class="btn_cha pull-right btn_close">×</a></h4>
+        <div class="shade_center height_jiexi">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>所属知识点：</td>
+                    <td>A1_1会计要素1</td>
+                </tr>
+                <tr>
+                    <td>内容编辑：</td>
+                    <td>
+                        <textarea placeholder="点击编辑" class="textarea_style event_textarea"></textarea>
+                        <span class="pull-right">最多不超过<span class="total">200</span>字，剩余字数<span class="overplus">200</span>字</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn_panel">
+            <a id="btn_sure_jiexi" href="javascript:;" class="btn_backgroundblue pull-right btn_basic">确定</a>
+            <a href="javascript:;" class="btn_borderblue pull-right btn_basic btn_close">取消</a>
+        </div>
+    </div>
+
+    <!-- 上传资料-->
+    <div id="shangchuan_panel" class="shade_content shade_shangchuan hide ">
+        <h4>上传资料 <a href="javascript:;" class="btn_cha pull-right btn_close">×</a></h4>
+        <div class="shade_center height_shangchuan ">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td>所属课程：</td>
+                    <td>会计基础</td>
+                </tr>
+                <tr>
+                    <td>所属知识点：</td>
+                    <td>A1_1会计要素1</td>
+                </tr>
+                <tr>
+                    <td>上传资料：</td>
+                    <td><span class="pull-left file_url" type="text"></span><a class="file" href="javascript:;">浏览<input type="file"></a></td>
+                </tr>
+                <tr>
+                    <td>设置权限：</td>
+                    <td>
+                        <input class="radio_style" type="radio" name="权限"><span class="radio_text">全网</span>
+                        <input class="radio_style" type="radio" name="权限"><span class="radio_text">院校</span>
+                        <input class="radio_style" type="radio" name="权限"><span class="radio_text">班级</span>
+                        <input class="radio_style" type="radio" name="权限"><span class="radio_text">私有</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td>
+                        <textarea placeholder="备注信息" class="textarea_style textarea_height"></textarea>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn_panel">
+            <a id="btn_sure_shangchuan" href="javascript:;" class="btn_backgroundblue pull-right btn_basic">确定</a>
+            <a href="javascript:;" class="btn_borderblue pull-right btn_basic btn_close">取消</a>
+        </div>
+    </div>
+</div>
+<!--右侧固定页面内容-->
+<div class="right_flexd">
+    <ul>
+        <li class="first_box">
+            <a href="javascript:;">
+                <span class="iconfont icon-kefu"></span>
+                <p class="first_text">咨询&反馈</p>
+            </a>
+            <div class="flexd_panel">
+                <ul class="flexd_content">
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-kefu "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                                0731-85219848
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-qq"></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <p class="color_888">QQ咨询</p>
+                            <p class="color_444">
+                            <ol class="list-inline">
+                                <li><a href="javascript:;">客服1</a></li>
+                                <li><a href="javascript:;">客服2</a></li>
+                                <li><a href="javascript:;">客服3</a></li>
+                                <li><a href="javascript:;">客服4</a></li>
+                                <li><a href="javascript:;">客服5</a></li>
+                                <li><a href="javascript:;">客服6</a></li>
+                            </ol>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pull-left icon_content">
+                            <span class="iconfont icon-fankui "></span>
+                        </div>
+                        <div class="text_show pull-left">
+                            <a href="javascirpt:;" style="line-height: 36px;">聆听、建议反馈</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-APPxiazai"></span>
+                    </div>
+                    <div class="text-content">
+                        <span>下载APP</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li><a href="javascript:;">
+            <div class="move_content">
+                <div class="icon-content">
+                    <span class="iconfont icon-zaixianliaotian"></span>
+                </div>
+                <div class="text-content">
+                    <span>在线 聊天</span>
+                </div>
+            </div>
+        </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-remenhuati"></span>
+                    </div>
+                    <div class="text-content">
+                        <span>热门 话题</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li style="display: none" id="goTop">
+            <a href="#">
+                <div class="move_content">
+                    <div class="icon-content">
+                        <span class="iconfont icon-fanhuidingbu"></span>
+                    </div>
+                    <div class="text-content">
+                        <span>返回 顶部</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/proTree.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/global.js"></script>-->
+<script src="js/tasks.js"></script>
+<!-- 树形菜单 -->
+<script type="text/javascript">
+    $(function(){
+        // div.innerUl
+        // 子菜单的pid为父菜单的id,一级菜单的pid为0
+        var arr = [{
+            id: 1,
+            name: "一级标题1",
+            pid: 0
+        }, {
+            id: 2,
+            name: "一级标题2",
+            pid: 0
+        }, {
+            id: 3,
+            name: "一级标题3",
+            pid: 0
+        }, {
+            id: 4,
+            name: "1.1级标题",
+            pid: 1
+        }, {
+            id: 5,
+            name: "1.2级标题",
+            pid: 1
+        }, {
+            id: 6,
+            name: "2.1级标题",
+            pid: 2
+        }, {
+            id: 7,
+            name: "2.2级标题",
+            pid: 2
+        }, {
+            id: 8,
+            name: "1.21级标题",
+            pid: 5
+        }, {
+            id: 9,
+            name: "1.22级标题",
+            pid: 5
+        }, {
+            id: 10,
+            name: "1.221级标题",
+            pid: 9
+        }, {
+            id: 11,
+            name: "1.2211级标题",
+            pid: 10
+        }, {
+            id: 12,
+            name: "1.2212级标题",
+            pid: 10
+        }
+        ];
+
+        $(".innerUl").ProTree({
+            arr: arr,
+            simIcon: "iconfont icon-wenjian1",
+            mouIconOpen: "iconfont icon-wenjian2",
+            mouIconClose:"iconfont icon-wenjian",
+            callback: function(id,name) {
+                console.log("你选择的id是" + id + "，名字是" + name);
+            }
+        })
+    })
+</script>
+
+</body>
+</html>
